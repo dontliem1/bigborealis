@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: src/_data/comingsoon.json
+  label: Coming soon page
+  match: "**/*"
 - type: heading
   label: Content
 - type: directory
