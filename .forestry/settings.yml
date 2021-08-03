@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/_data/comingsoon.json
   label: Coming soon page
-  match: "**/*"
 - type: heading
   label: Content
 - type: directory
@@ -25,8 +24,8 @@ sections:
 - type: document
   path: src/_data/tokens.json
   label: Theme settings
-upload_dir: src/images
-public_path: "/images"
+upload_dir: src/images/upload
+public_path: "/upload"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
