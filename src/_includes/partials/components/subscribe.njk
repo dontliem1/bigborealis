@@ -1,0 +1,30 @@
+<form class='subscribe' id='subscribe' name="subscribe" action="/">
+  <p class='subscribe__text'>Coming Soon in 2021. Subscribe for News</p>
+  <div class='subscribe__wrapper'>
+    <input class='subscribe__input' type='email' name='email' placeholder='Type e-mail' aria-label='E-mail'>
+    <button class='subscribe__btn' name='btn'><span>Send</span></button>
+    <p class='subscribe__message' hidden>This is wrong email</p>
+  </div>
+  <input name="bot-field" aria-label='Don’t fill this out' type='hidden'/>
+</form>
+<script>
+  document.getElementById('subscribe').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const email = form.email;
+    const btn = form.btn;
+    const msg = document.querySelector('.subscribe__message');
+   email.disabled = btn.disabled = true;
+    setTimeout(function() {
+      const success = Math.random() < 0.5;
+      if (success) {
+        form.classList.add('subscribe--success');
+        msg.textContent = 'Thank you, we added your email to the list';
+      } else {
+        form.classList.add('subscribe--error');
+        msg.textContent = 'This is wrong email';
+      }
+      email.disabled = btn.disabled = false;
+    }, 2000);
+  });
+</script>

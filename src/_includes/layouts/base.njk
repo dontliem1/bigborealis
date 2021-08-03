@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js{{ ' home' if page.url === '/' }}">
+<!--suppress HtmlRequiredTitleElement -->
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--suppress HtmlUnknownTarget -->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml" />
   <link rel="icon" href="{{ site.faviconPath }}" type="image/png" />
   {% include "partials/global/meta-info.njk" %}
@@ -13,13 +15,12 @@
   {% endblock %}
 </head>
 <body>
-  {% include "partials/global/site-head.njk" %}
   {% block content %}
   {% endblock content %}
   {% include "partials/global/site-foot.njk" %}
   {% block foot %}
   {% endblock %}
-  <script type="module" src="/js/components/theme-toggle.js" async defer></script>
+  {% include "partials/global/site-frame.njk" %}
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {

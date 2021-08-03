@@ -1,7 +1,6 @@
 *.log
 npm-debug.*
 *.scssc
-*.log
 *.swp
 .DS_Store
 .sass-cache
@@ -9,7 +8,7 @@ node_modules
 dist 
 
 # Specifics
-
+.idea
 # Hide design tokens
 src/scss/_tokens.scss
 

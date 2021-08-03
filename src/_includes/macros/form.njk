@@ -7,7 +7,6 @@
 {% endmacro %}
 
 {% macro field( type, name, data ) %}
-  <br>
   <input class="question__field"
         type="{{ type }}"
         name="{{ name }}"
@@ -19,6 +18,7 @@
         {% if data.autocomplete %}autocomplete="{{ data.autocomplete }}"{% endif %}
         {% if data.autocorrect %}autocorrect="{{ data.autocorrect }}"{% endif %}
         {% if data.spellcheck %}spellcheck="{{ data.spellcheck }}"{% endif %}
+        {% if data.label %}aria-label="{{ data.label }}"{% endif %}
         {% if data.autocapitalize %}autocapitalize="{{ data.autocapitalize }}"{% endif %}
         >
   {% if data.description %}
@@ -81,7 +81,7 @@
   <br>
   <textarea id="field-{{ name }}"
             name="{{ name }}"
-            {% if data.rows %}rows="{{ data.rows }}"{% else %}rows="5"{% endif %}
+            {% if data.rows %}rows="{{ data.rows }}"{% else %} rows="5"{% endif %}
             cols="100"
             {% if data.required %}required aria-required="true"{% endif %}
             {% if data.autocorrect %}autocorrect="{{ data.autocorrect }}"{% endif %}

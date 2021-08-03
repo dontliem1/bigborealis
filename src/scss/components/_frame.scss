@@ -1,0 +1,18 @@
+.frame {
+  position: absolute;
+  pointer-events: none;
+  top: .8rem;
+  left: .8rem;
+  right: .8rem;
+  bottom: .8rem;
+}
+.frame__code {
+  display: inline-block;
+  transform: rotate(-90deg);
+  position: absolute;
+  font-size: 1rem;
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  right: .3rem;
+  top: 3.2rem;
+  transform-origin: bottom right;
+}
