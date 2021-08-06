@@ -4,16 +4,16 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: Заголовок
+  label: Title
 - type: textarea
   name: metaDesc
-  label: Описание дл поисковиков
+  label: Description for search engines
 - name: socialImage
   type: file
-  label: image
+  label: Picture for social media
 - name: logo
   type: file
-  label: image
+  label: Logo
 - name: background
   type: file
-  label: image
+  label: Background image
