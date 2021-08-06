@@ -30,7 +30,7 @@ jobs:
         uses: TartanLlama/actions-eleventy@v1.2
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@latest
+        uses: peaceiris/actions-gh-pages@v3.7.3
         env:
           PUBLISH_DIR: _site 
           PUBLISH_BRANCH: gh-pages
