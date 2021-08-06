@@ -16,13 +16,21 @@
   {% block head %}
   {% endblock %}
 </head>
-<body{% if (background and page.url === '/') %} style='background-image: url("{{ background }}")' {% endif %}>
-  {% include "partials/global/site-frame.njk" %}
+<body class='frame' {% if (background and page.url === '/') %} style='background-image: url("{{ background }}")' {% endif %}>
+  <span class='frame__target'></span>
+  <span class='frame__swatches'></span>
+  <span class='frame__target'></span>
+  <span class='frame__left'></span>
   {% block content %}
   {% endblock content %}
+  <span class='frame__code'>EJ 01 5790 8702+33</span>
+  <span class='frame__scale'>
+        <span></span>
+    </span>
+  <span class='frame__target'></span>
   {% include "partials/global/site-foot.njk" %}
+  <span class='frame__target'></span>
   {% block foot %}
   {% endblock %}
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
 </body>
 </html>

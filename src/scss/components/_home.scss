@@ -16,7 +16,7 @@
 .home__description p {
   margin: 0;
 }
-@media (min-width: 76rem) {
+@media (min-width: 48em) {
   .home__logo {
     width: 28.5rem;
   }
@@ -24,7 +24,7 @@
     margin-top: 2.4rem;
   }
 }
-@media (min-width: 144rem) {
+@media (min-width: 70em) {
   .home__logo {
     width: 38rem;
   }
