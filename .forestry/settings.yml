@@ -9,6 +9,8 @@ sections:
 - type: document
   path: src/index.md
   label: Coming soon page
+  templates:
+    - homepage
 - type: directory
   path: src/posts
   label: Posts

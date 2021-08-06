@@ -16,7 +16,7 @@
   {% block head %}
   {% endblock %}
 </head>
-<body{% if (comingsoon.background and page.url === '/') %} style='background-image: url("{{ comingsoon.background }}")' {% endif %}>
+<body{% if (background and page.url === '/') %} style='background-image: url("{{ background }}")' {% endif %}>
   {% include "partials/global/site-frame.njk" %}
   {% block content %}
   {% endblock content %}

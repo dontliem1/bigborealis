@@ -1,0 +1,19 @@
+---
+label: Homepage
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Заголовок
+- type: textarea
+  name: metaDesc
+  label: Описание дл поисковиков
+- name: socialImage
+  type: file
+  label: image
+- name: logo
+  type: file
+  label: image
+- name: background
+  type: file
+  label: image
