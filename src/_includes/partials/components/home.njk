@@ -1,6 +1,6 @@
-<h1 class="home__heading {{ ' visually-hidden' if introLogo }}">{{ introHeading }}</h1>
-{% if introLogo %}
-  <img class='home__logo' src='{{ introLogo }}' alt='Genius Immersive Show' width='140' height='70'>
+<h1 class="home__heading {{ ' visually-hidden' if comingsoon.logo }}">{{ introHeading }}</h1>
+{% if comingsoon.logo %}
+  <img class='home__logo' src='{{ comingsoon.logo }}' alt='Genius Immersive Show' width='140' height='70'>
 {% endif %}
 {% if introSummary %}
   <div class="home__description">{{ introSummary | safe }}</div>
