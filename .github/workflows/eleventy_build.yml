@@ -28,7 +28,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build
         uses: TartanLlama/actions-eleventy@v1.2
-        install_dependencies: true
+        with:
+          install_dependencies: true
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.3
