@@ -82,6 +82,13 @@ collections:
               - {label: "Text", name: "text", widget: "string"}
               - {label: "Url", name: "url", widget: "string"}
               - {label: "Is url to external site?", name: "external", widget: "boolean", required: false}
+      - label: "Coming soon page"
+        name: "comingsoon"
+        delete: false
+        file: "src/_data/comingsoon.json"
+        fields:
+          - {label: "Site logo", name: "logo", widget: "image", required: false}
+          - {label: "Site background", name: "background", widget: "image", required: false}
       - label: "Theme Settings"
         name: "theme"
         delete: false
