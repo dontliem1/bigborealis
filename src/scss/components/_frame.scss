@@ -13,7 +13,7 @@
 }
 .frame__target {
   //noinspection CssUnknownTarget
-  background: url("../images/target.svg") center /1.6rem no-repeat;
+  background: url("../../images/target.svg") center /1.6rem no-repeat;
   padding: 1.6rem;
 }
 .frame__target:last-child {
@@ -98,7 +98,7 @@
   margin-top: .5em;
   margin-bottom: auto;
 }
-@media (min-width: 76rem) {
+@media (min-width: 60em) {
   .frame {
     grid-template-columns: 5.6rem 1fr 5.6rem;
     grid-template-rows: 5.6rem 10em 1fr 5.6rem;
