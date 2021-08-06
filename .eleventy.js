@@ -27,7 +27,6 @@ module.exports = function(config) {
   config.addTransform('parse', parseTransform);
 
   // Passthrough copy
-  config.addPassthroughCopy({'src/_includes/assets': 'assets'});
   config.addPassthroughCopy('src/fonts');
   config.addPassthroughCopy('src/images');
   config.addPassthroughCopy('src/js');
