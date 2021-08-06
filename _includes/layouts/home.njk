@@ -1,0 +1,14 @@
+{% extends 'layouts/base.njk' %}
+
+{# Intro content #}
+{% set introHeading = title %}
+{% set introSummary %}
+  {{ content | safe }}
+{% endset %}
+
+{% block content %}
+  <main>
+    {% include "partials/components/home.njk" %}
+    {% include "partials/components/subscribe.njk" %}
+  </main>
+{% endblock %}

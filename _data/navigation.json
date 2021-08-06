@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "text": "Homepage",
+      "url": "/",
+      "external": false
+    },
+    {
+      "text": "Data Privacy",
+      "url": "/privacy",
+      "external": false
+    }
+  ]
+}
