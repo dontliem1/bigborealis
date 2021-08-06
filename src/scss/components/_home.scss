@@ -1,9 +1,18 @@
 .home__heading {
-  max-width: 14rem;
-  line-height: 1;
-  font-size: 2.4rem;
+  max-width: 5em;
+  line-height: .8;
+  font-size: 2.5em;
+  margin: 0;
 }
 .home__description {
   margin-top: .8rem;
-  max-width: 17rem;
+  max-width: 14.25em;
+}
+.home__description p {
+  margin: 0;
+}
+@media (min-width: 76rem) {
+  .home__description {
+    margin-top: 2.4rem;
+  }
 }

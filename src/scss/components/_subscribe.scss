@@ -2,7 +2,7 @@
 
 .subscribe {
   margin-top: auto;
-  max-width: 29rem;
+  max-width: 24em;
   margin-bottom: .8rem;
 }
 .subscribe__text {
@@ -12,12 +12,16 @@
   display: flex;
   align-items: baseline;
   background-color: #fff;
+  background-image: linear-gradient(90deg, #FFFFFF 50%, #0157FF 60%, #00FFF0, #FF00F5);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  transition: background-position .2s;
   padding: 1px;
   border-radius: .8rem;
   position: relative;
 }
 .subscribe__wrapper:focus-within {
-  background-image: linear-gradient(90deg, #0157FF, #00FFF0, #FF00F5);
+  background-position: 100% 0;
 }
 .subscribe__input:disabled,
 .subscribe__btn:disabled,
@@ -27,40 +31,33 @@
 .subscribe__wrapper:hover .subscribe__btn {
   background-color: #191919;
 }
-.subscribe__input {
-  background-color: #000;
-  color: inherit;
-  font-family: inherit;
-  font-size: 1.4rem;
-  border: 0;
-  flex-grow: 1;
-  margin: 0;
-  padding: 1.4rem;
-  outline: none;
-  border-top-left-radius: .7rem;
-  border-bottom-left-radius: .7rem;
-  transition: background-color .2s;
-}
-
-//noinspection CssInvalidPseudoSelector
-.subscribe__input:-internal-autofill-selected {
-  background: #000 !important;
-  appearance: auto;
-}
+.subscribe__input,
 .subscribe__btn {
   background-color: #000;
+  color: inherit;
   font-family: inherit;
-  font-weight: bold;
   font-size: 1.4rem;
   border: 0;
-  color: inherit;
   margin: 0;
   padding: 1.4rem;
+  outline: none;
+  transition: background-color .2s, background-position .2s;
+}
+.subscribe__input {
+  flex-grow: 1;
+  border-top-left-radius: .7rem;
+  border-bottom-left-radius: .7rem;
+  width: 10em;
+}
+
+.subscribe__btn {
+  font-weight: bold;
   border-top-right-radius: .7rem;
   border-bottom-right-radius: .7rem;
-  outline: none;
-  transition: background-color .2s;
   position: relative;
+  background-size: 200% 100%;
+  background-position: 0 0;
+  background-image: linear-gradient(90deg, rgba(219, 0, 255, 0) 50%, rgba(219, 0, 255, .5), #3300FF);
 }
 .subscribe__input:disabled,
 .subscribe__btn:disabled {
@@ -98,11 +95,11 @@
 }
 .subscribe__btn:focus,
 .subscribe__btn:enabled:hover {
-  background-image: linear-gradient(90deg, rgba(219, 0, 255, 0), rgba(219, 0, 255, .5), #3300FF);
+  background-position: 100% 0;
 }
 .subscribe__message {
   position: absolute;
-  top: -2em;
+  top: -3em;
   left: .8rem;
   padding: 1.2rem 1.6rem;
   border-radius: .8rem;
@@ -121,4 +118,16 @@
 }
 .subscribe__wrapper:focus-within .subscribe__message {
   display: none;
+}
+@media (min-width: 76rem) {
+  .subscribe__text {
+    margin-bottom: 1.6rem;
+  }
+  .subscribe__input,
+  .subscribe__btn {
+    font-size: inherit;
+  }
+  .subscribe__message {
+    font-size: 1.6rem;
+  }
 }
