@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: Content
 - type: document
-  path: src/_data/comingsoon.json
+  path: src/index.md
   label: Coming soon page
 - type: directory
   path: src/posts
