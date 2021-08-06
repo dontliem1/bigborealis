@@ -5,7 +5,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "body{font-family:\"Inter\",sans-serif}html{color-scheme:dark;font-size:62.5%;background-color:#000;height:100%;display:flex}body{scroll-behavior:smooth;font-size:1.2em;padding-top:3.2rem;padding-left:3.2rem;padding-right:3.2rem;display:flex;flex-direction:column;line-height:1.2;margin:0;flex-grow:1;background-size:cover;background-position:center;background-repeat:no-repeat}@media(min-width: 76rem){body{font-size:2em;padding-top:6.4rem;padding-left:6.4rem;padding-right:6.4rem}}@media(min-width: 144rem){body{font-size:2.4em}}main{flex-grow:1;display:flex;flex-direction:column;z-index:1}.visually-hidden{border:0;clip:rect(0 0 0 0);height:auto;margin:0;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap}.subscribe{margin-top:auto;max-width:24em;margin-bottom:.8rem}.subscribe__text{margin-bottom:.8rem}.subscribe__wrapper{display:flex;align-items:baseline;background-color:#fff;background-image:linear-gradient(90deg, #FFFFFF 50%, #0157FF 60%, #00FFF0, #FF00F5);background-size:200% 100%;background-position:0 0;transition:background-position .2s;padding:1px;border-radius:.8rem;position:relative}.subscribe__wrapper:focus-within{background-position:100% 0}.subscribe__input:disabled,.subscribe__btn:disabled,.subscribe__wrapper:focus-within .subscribe__input,.subscribe__wrapper:focus-within .subscribe__btn,.subscribe__wrapper:hover .subscribe__input,.subscribe__wrapper:hover .subscribe__btn{background-color:#191919}.subscribe__input,.subscribe__btn{background-color:#000;color:inherit;font-family:inherit;font-size:1.4rem;border:0;margin:0;padding:1.4rem;outline:none;transition:background-color .2s,background-position .2s}.subscribe__input{flex-grow:1;border-top-left-radius:.7rem;border-bottom-left-radius:.7rem;width:10em}.subscribe__btn{font-weight:bold;border-top-right-radius:.7rem;border-bottom-right-radius:.7rem;position:relative;background-size:200% 100%;background-position:0 0;background-image:linear-gradient(90deg, rgba(219, 0, 255, 0) 50%, rgba(219, 0, 255, 0.5), #3300FF)}.subscribe__input:disabled,.subscribe__btn:disabled{cursor:not-allowed}.subscribe__btn:enabled{cursor:pointer}.subscribe__btn:disabled span{opacity:0}.subscribe__btn:disabled::before{content:\"\";display:inline-block;position:absolute;left:50%;top:50%;padding:.5em;border-radius:1em;line-height:1;border-top:2px solid;border-left:2px solid;border-bottom:2px solid;border-right:2px solid transparent;transform:translate(-50%, -50%);animation:rotate 3s infinite linear}@keyframes rotate{0%{transform:translate(-50%, -50%) rotate(0)}100%{transform:translate(-50%, -50%) rotate(360deg)}}.subscribe__btn:focus,.subscribe__btn:enabled:hover{background-position:100% 0}.subscribe__message{position:absolute;top:-3em;left:.8rem;padding:1.2rem 1.6rem;border-radius:.8rem;line-height:1}.subscribe--error .subscribe__wrapper{background-image:linear-gradient(90deg, #FF4A4A, #FF9900, #FF4A4A)}.subscribe--error .subscribe__message{display:inline-block;background-image:linear-gradient(to bottom right, #FF4A4A, #FF9900)}.subscribe--success .subscribe__message{display:inline-block;background-image:linear-gradient(to bottom right, #30CE09, #00B3BE)}.subscribe__wrapper:focus-within .subscribe__message{display:none}@media(min-width: 76rem){.subscribe__text{margin-bottom:1.6rem}.subscribe__input,.subscribe__btn{font-size:inherit}.subscribe__message{font-size:1.6rem}}.home__heading{max-width:5em;line-height:.8;font-size:2.5em;margin:0}.home__logo{width:14rem;height:auto;max-width:100%}.home__description{margin-top:.8rem;max-width:14.25em}.home__description p{margin:0}@media(min-width: 76rem){.home__logo{width:28.5rem}.home__description{margin-top:2.4rem}}@media(min-width: 144rem){.home__logo{width:38rem}.home__description{max-width:16em}}.frame{position:absolute;pointer-events:none;top:0;left:0;right:0;bottom:0;display:grid;grid-template-columns:3.2rem 1fr 3.2rem;grid-template-rows:3.2rem 14em 1fr 3.2rem;height:100%;background-color:rgba(0,0,0,.5)}.frame__target{background:url(\"../images/target.svg\") center/1.6rem no-repeat;padding:1.6rem}.frame__target:last-child{grid-column:3/4}.frame__code{display:inline-block;transform:rotate(-90deg);font-size:1rem;font-family:\"Source Code Pro\",\"SF Mono\",Monaco,Inconsolata,\"Fira Mono\",\"Droid Sans Mono\",monospace,monospace;transform-origin:bottom right;grid-column:3/4;white-space:nowrap;margin-right:1em;align-self:center}.frame__swatches{white-space:nowrap;line-height:0;border:.1rem solid;border-right:2.4rem solid;padding-left:1.2rem;margin-left:auto;margin-top:auto;margin-bottom:auto}.frame__swatches::before,.frame__swatches::after{content:\"\";display:inline-block;padding:.6rem;border-left:.1rem solid}.frame__swatches::before{background-color:#828282}.frame__swatches::after{background-color:#cbcbcb}.frame__left{display:inline-block;padding:.85rem;background-image:linear-gradient(rgba(255, 255, 255, 0) 0.8rem, white 0.8rem, white 0.9rem, rgba(255, 255, 255, 0) 0.9rem),linear-gradient(90deg, rgba(255, 255, 255, 0) 0.8rem, white 0.8rem, white 0.9rem, rgba(255, 255, 255, 0) 0.9rem);grid-row:2/4;margin:auto}.frame__scale{display:inline-flex;flex-direction:column;border-left:1px solid;border-bottom:1px solid;grid-column:3/4;margin-left:auto;margin-right:auto;margin-bottom:3rem;justify-content:space-between;padding-bottom:.5em;max-height:17rem;align-self:end;height:100%}.frame__scale::before,.frame__scale::after{content:\"\";border-top:1px solid;border-bottom:1px solid;padding-bottom:1em}.frame__scale span{display:block;border-top:1px solid;border-bottom:1px solid;padding:2rem .3rem;margin:auto 0}.frame__scale::before{margin-bottom:.5em}.frame__scale::after{margin-top:.5em;margin-bottom:auto}@media(min-width: 76rem){.frame{grid-template-columns:5.6rem 1fr 5.6rem;grid-template-rows:5.6rem 10em 1fr 5.6rem}.frame__target{background-size:2.4rem;padding:2.8rem}.frame__code{font-size:1.4rem;margin-top:2rem;margin-right:2rem}.frame__swatches{border-right:4rem solid;padding-left:2rem}.frame__swatches::before,.frame__swatches::after{padding:1rem}.frame__left{padding:1.25rem;background-image:linear-gradient(rgba(255, 255, 255, 0) 1.2rem, white 1.2rem, white 1.3rem, rgba(255, 255, 255, 0) 1.3rem),linear-gradient(90deg, rgba(255, 255, 255, 0) 1.2rem, white 1.2rem, white 1.3rem, rgba(255, 255, 255, 0) 1.3rem);margin-bottom:30vh}.frame__scale span{padding:3.8rem .6rem}}.footer{z-index:1}.nav{text-align:right}.nav__list{margin:0;list-style:none;padding:0}.nav__item{margin-left:1em;display:inline-block}.nav__link{display:inline-block;color:inherit;text-decoration:none;padding:.8rem 0;outline:none;transition:color .2s}.nav__link:hover,.nav__link:focus{color:#ff00f5}@media(min-width: 76rem){.nav__link{font-size:1.6rem;padding:1em 0}}/*# sourceMappingURL=global.css.map */\n";
+output += "body{font-family:\"Inter\",sans-serif}.page__title{margin-top:0;margin-bottom:.25em}html{color-scheme:dark;font-size:62.5%;background-color:#000;min-height:100%;display:flex;color:#fff}body{scroll-behavior:smooth;font-size:1.2em;display:flex;flex-direction:column;line-height:1.2;margin:0;flex-grow:1;background-size:cover;background-position:center;background-repeat:no-repeat;min-height:100%}main{flex-grow:1;display:flex;flex-direction:column;z-index:1;grid-row:span 2}@media(min-width: 48em){body{font-size:2em}}@media(min-width: 70em){body{font-size:2.4em}}@media(min-width: 110em){html{font-size:93.75%}}.visually-hidden{border:0;clip:rect(0 0 0 0);height:auto;margin:0;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap}.subscribe{margin-top:auto;max-width:24em;margin-bottom:.8rem}.subscribe__text{margin-bottom:.8rem}.subscribe__wrapper{display:flex;align-items:baseline;background-color:#fff;background-image:linear-gradient(90deg, #FFFFFF 50%, #0157FF 60%, #00FFF0, #FF00F5);background-size:200% 100%;background-position:0 0;transition:background-position .2s;padding:.1rem;border-radius:.8rem;position:relative}.subscribe__wrapper:focus-within{background-position:100% 0}.subscribe__input,.subscribe__btn{background-color:#000;color:inherit;font-family:inherit;font-size:1.4rem;border:0;margin:0;padding:1.4rem;outline:none;transition:background-color .2s,background-position .2s,box-shadow .2s}.subscribe__input{flex-grow:1;border-top-left-radius:.7rem;border-bottom-left-radius:.7rem;width:10em}.subscribe__input:-webkit-autofill{box-shadow:0 0 0 2em #000 inset !important;-webkit-text-fill-color:#fff !important}.subscribe__input:-webkit-autofill:hover,.subscribe__input:-webkit-autofill:focus,.subscribe__input:-webkit-autofill:active{box-shadow:0 0 0 2em #191919 inset !important}.subscribe__input:-webkit-autofill::first-line{font-size:1.4rem;font-family:\"Inter\",sans-serif}.subscribe__btn{font-weight:bold;border-top-right-radius:.7rem;border-bottom-right-radius:.7rem;position:relative;background-size:200% 100%;background-position:0 0;background-image:linear-gradient(90deg, rgba(219, 0, 255, 0) 50%, rgba(219, 0, 255, 0.5), #3300FF)}.subscribe__input:disabled,.subscribe__btn:disabled{cursor:not-allowed}.subscribe__btn:enabled{cursor:pointer}.subscribe__btn:disabled span{opacity:0}.subscribe__btn:disabled::before{content:\"\";display:inline-block;position:absolute;left:50%;top:50%;padding:.5em;border-radius:1em;line-height:1;border-top:.2rem solid;border-left:.2rem solid;border-bottom:.2rem solid;border-right:.2rem solid transparent;transform:translate(-50%, -50%);animation:rotate 3s infinite linear}@keyframes rotate{0%{transform:translate(-50%, -50%) rotate(0)}100%{transform:translate(-50%, -50%) rotate(360deg)}}.subscribe__btn:focus,.subscribe__btn:enabled:hover{background-position:100% 0}.subscribe__input:disabled,.subscribe__btn:disabled,.subscribe__wrapper:focus-within .subscribe__input,.subscribe__wrapper:focus-within .subscribe__btn,.subscribe__wrapper:hover .subscribe__input,.subscribe__wrapper:hover .subscribe__btn{background-color:#191919}.subscribe__input:disabled:-webkit-autofill{box-shadow:0 0 0 2em #191919 inset !important}.subscribe__message{position:absolute;top:-3em;left:.8rem;padding:1.2rem 1.6rem;border-radius:.8rem;line-height:1}.subscribe--error .subscribe__wrapper{background-image:linear-gradient(90deg, #FF4A4A, #FF9900, #FF4A4A)}.subscribe--error .subscribe__message{display:inline-block;background-image:linear-gradient(to bottom right, #FF4A4A, #FF9900)}.subscribe--success .subscribe__message{display:inline-block;background-image:linear-gradient(to bottom right, #30CE09, #00B3BE)}.subscribe__wrapper:focus-within .subscribe__message{display:none}@media(min-width: 70em){.subscribe__text{margin-bottom:1.6rem}.subscribe__input,.subscribe__btn{font-size:inherit}.subscribe__message{font-size:1.6rem}.subscribe__input:-webkit-autofill::first-line{font-size:2.4rem}}@media(min-width: 110em){.subscribe__input:-webkit-autofill::first-line{font-size:2.4rem}}.home__heading{max-width:5em;line-height:.8;font-size:2.5em;margin:0}.home__logo{width:14rem;height:auto;max-width:100%}.home__description{margin-top:.8rem;max-width:14.25em}.home__description p{margin:0}@media(min-width: 48em){.home__logo{width:28.5rem}.home__description{margin-top:2.4rem}}@media(min-width: 70em){.home__logo{width:38rem}.home__description{max-width:16em}}.frame{display:grid;grid-template-columns:3.2rem 1fr 3.2rem;grid-template-rows:3.2rem 14em 1fr 3.2rem}.frame::before{content:\"\";position:fixed;display:block;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.5)}.frame>*{z-index:1}.frame__target{background:url(\"/images/target.svg\") center/1.6rem no-repeat;padding:1.6rem}.frame__target:last-child{grid-column:3/4}.frame__code{display:inline-block;transform:rotate(-90deg);font-size:1rem;font-family:\"Source Code Pro\",\"SF Mono\",Monaco,Inconsolata,\"Fira Mono\",\"Droid Sans Mono\",monospace,monospace;transform-origin:bottom right;grid-column:3/4;white-space:nowrap;margin-right:1em;align-self:center}.frame__swatches{white-space:nowrap;line-height:0;border:.1rem solid;border-right:2.4rem solid;padding-left:1.2rem;margin-left:auto;margin-top:auto;margin-bottom:auto}.frame__swatches::before,.frame__swatches::after{content:\"\";display:inline-block;padding:.6rem;border-left:.1rem solid}.frame__swatches::before{background-color:rgba(255,255,255,.33)}.frame__swatches::after{background-color:rgba(255,255,255,.66)}.frame__left{display:inline-block;padding:.85rem;background-image:linear-gradient(rgba(255, 255, 255, 0) 0.8rem, white 0.8rem, white 0.9rem, rgba(255, 255, 255, 0) 0.9rem),linear-gradient(90deg, rgba(255, 255, 255, 0) 0.8rem, white 0.8rem, white 0.9rem, rgba(255, 255, 255, 0) 0.9rem);grid-row:2/4;margin:auto}.frame__scale{display:inline-flex;flex-direction:column;border-left:1px solid;border-bottom:1px solid;grid-column:3/4;margin-left:auto;margin-right:auto;margin-bottom:3rem;justify-content:space-between;padding-bottom:.5em;max-height:17rem;align-self:end;height:100%}.frame__scale::before,.frame__scale::after{content:\"\";border-top:1px solid;border-bottom:1px solid;padding-bottom:1em}.frame__scale span{display:block;border-top:1px solid;border-bottom:1px solid;padding:2rem .3rem;margin:auto 0}.frame__scale::before{margin-bottom:.5em}.frame__scale::after{margin-top:.5em;margin-bottom:auto}@media(min-width: 48em){.frame{grid-template-columns:5.6rem 1fr 5.6rem;grid-template-rows:5.6rem 10em 1fr 5.6rem}.frame__target{background-size:2.4rem;padding:2.8rem}.frame__code{font-size:1.4rem;margin-top:2rem;margin-right:2rem}.frame__swatches{border-right:4rem solid;padding-left:2rem}.frame__swatches::before,.frame__swatches::after{padding:1rem}.frame__left{padding:1.25rem;background-image:linear-gradient(rgba(255, 255, 255, 0) 1.2rem, white 1.2rem, white 1.3rem, rgba(255, 255, 255, 0) 1.3rem),linear-gradient(90deg, rgba(255, 255, 255, 0) 1.2rem, white 1.2rem, white 1.3rem, rgba(255, 255, 255, 0) 1.3rem);margin-bottom:30vh}.frame__scale span{padding:3.8rem .6rem}}.footer{z-index:1}.nav{text-align:right}.nav__list{margin:0;list-style:none;padding:0}.nav__item{margin-left:1em;display:inline-block}.nav__link{display:inline-block;color:inherit;text-decoration:none;padding:.8rem 0;outline:none;transition:color .2s}.nav__link:hover,.nav__link:focus{color:#ff00f5}@media(min-width: 48em){.nav__link{font-size:1.6rem;padding:1em 0}}/*# sourceMappingURL=global.css.map */\n";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
@@ -77,92 +77,54 @@ output += result;
 callback(null);
 });
 env.waterfall(tasks, function(){
-output += "\n  <script>document.documentElement.classList.remove('no-js');</script>\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap\" rel=\"stylesheet\">\n  <style>";
-var tasks = [];
-tasks.push(
-function(callback) {
-env.getTemplate("assets/css/global.css", false, "layouts/base.njk", false, function(t_6,t_5) {
+output += "\n  <script>document.documentElement.classList.remove('no-js');</script>\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap\" rel=\"stylesheet\">\n  <link rel='stylesheet' href='";
+output += runtime.suppressValue(env.getFilter("url").call(context, "/global.css"), env.opts.autoescape);
+output += "'>\n  ";
+(parentTemplate ? function(e, c, f, r, cb) { cb(""); } : context.getBlock("head"))(env, context, frame, runtime, function(t_6,t_5) {
 if(t_6) { cb(t_6); return; }
-callback(null,t_5);});
-});
-tasks.push(
-function(template, callback){
-template.render(context.getVariables(), frame, function(t_8,t_7) {
-if(t_8) { cb(t_8); return; }
-callback(null,t_7);});
-});
-tasks.push(
-function(result, callback){
-output += result;
-callback(null);
-});
-env.waterfall(tasks, function(){
-output += "</style>\n  ";
-(parentTemplate ? function(e, c, f, r, cb) { cb(""); } : context.getBlock("head"))(env, context, frame, runtime, function(t_10,t_9) {
-if(t_10) { cb(t_10); return; }
-output += t_9;
-output += "\n</head>\n<body";
+output += t_5;
+output += "\n</head>\n<body class='frame' ";
 if((runtime.contextOrFrameLookup(context, frame, "background") && runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "page")),"url") === "/")) {
 output += " style='background-image: url(\"";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "background"), env.opts.autoescape);
 output += "\")' ";
 ;
 }
-output += ">\n  ";
+output += ">\n  <span class='frame__target'></span>\n  <span class='frame__swatches'></span>\n  <span class='frame__target'></span>\n  <span class='frame__left'></span>\n  ";
+(parentTemplate ? function(e, c, f, r, cb) { cb(""); } : context.getBlock("content"))(env, context, frame, runtime, function(t_8,t_7) {
+if(t_8) { cb(t_8); return; }
+output += t_7;
+output += "\n  <span class='frame__code'>EJ 01 5790 8702+33</span>\n  <span class='frame__scale'>\n        <span></span>\n    </span>\n  <span class='frame__target'></span>\n  ";
 var tasks = [];
 tasks.push(
 function(callback) {
-env.getTemplate("partials/global/site-frame.njk", false, "layouts/base.njk", false, function(t_12,t_11) {
+env.getTemplate("partials/global/site-foot.njk", false, "layouts/base.njk", false, function(t_10,t_9) {
+if(t_10) { cb(t_10); return; }
+callback(null,t_9);});
+});
+tasks.push(
+function(template, callback){
+template.render(context.getVariables(), frame, function(t_12,t_11) {
 if(t_12) { cb(t_12); return; }
 callback(null,t_11);});
 });
 tasks.push(
-function(template, callback){
-template.render(context.getVariables(), frame, function(t_14,t_13) {
+function(result, callback){
+output += result;
+callback(null);
+});
+env.waterfall(tasks, function(){
+output += "\n  <span class='frame__target'></span>\n  ";
+(parentTemplate ? function(e, c, f, r, cb) { cb(""); } : context.getBlock("foot"))(env, context, frame, runtime, function(t_14,t_13) {
 if(t_14) { cb(t_14); return; }
-callback(null,t_13);});
-});
-tasks.push(
-function(result, callback){
-output += result;
-callback(null);
-});
-env.waterfall(tasks, function(){
-output += "\n  ";
-(parentTemplate ? function(e, c, f, r, cb) { cb(""); } : context.getBlock("content"))(env, context, frame, runtime, function(t_16,t_15) {
-if(t_16) { cb(t_16); return; }
-output += t_15;
-output += "\n  ";
-var tasks = [];
-tasks.push(
-function(callback) {
-env.getTemplate("partials/global/site-foot.njk", false, "layouts/base.njk", false, function(t_18,t_17) {
-if(t_18) { cb(t_18); return; }
-callback(null,t_17);});
-});
-tasks.push(
-function(template, callback){
-template.render(context.getVariables(), frame, function(t_20,t_19) {
-if(t_20) { cb(t_20); return; }
-callback(null,t_19);});
-});
-tasks.push(
-function(result, callback){
-output += result;
-callback(null);
-});
-env.waterfall(tasks, function(){
-output += "\n  ";
-(parentTemplate ? function(e, c, f, r, cb) { cb(""); } : context.getBlock("foot"))(env, context, frame, runtime, function(t_22,t_21) {
-if(t_22) { cb(t_22); return; }
-output += t_21;
-output += "\n  <script>\n    if ('serviceWorker' in navigator) {\n      window.addEventListener('load', () => {\n        navigator.serviceWorker.register('/service-worker.js');\n      });\n    }\n  </script>\n  <script src=\"https://identity.netlify.com/v1/netlify-identity-widget.js\" defer></script>\n</body>\n</html>\n";
+output += t_13;
+output += "\n</body>\n</html>\n";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
 cb(null, output);
 }
-})})})})})})});
+})})})})});
 } catch (e) {
   cb(runtime.handleError(e, lineno, colno));
 }
@@ -181,7 +143,7 @@ cb(null, output);
 }
 }
 function b_content(env, context, frame, runtime, cb) {
-var lineno = 20;
+var lineno = 23;
 var colno = 5;
 var output = "";
 try {
@@ -194,7 +156,7 @@ cb(null, output);
 }
 }
 function b_foot(env, context, frame, runtime, cb) {
-var lineno = 23;
+var lineno = 32;
 var colno = 5;
 var output = "";
 try {
@@ -634,11 +596,11 @@ var colno = 3;
 var output = "";
 try {
 var frame = frame.push(true);
-output += "\n  <main id=\"main-content\">\n    <article class=\"[ post ] [ h-entry ]\">\n      <h1>";
+output += "\n  <main>\n    <h1 class='page__title'>";
 output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "title"), env.opts.autoescape);
-output += "</h1>\n      <div class=\"[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-900 pad-bottom-900 text-500 ] [ sf-flow ] [ e-content ]\">\n        ";
+output += "</h1>\n    <div>\n      ";
 output += runtime.suppressValue(env.getFilter("safe").call(context, runtime.contextOrFrameLookup(context, frame, "content")), env.opts.autoescape);
-output += "\n      </div>\n    </article>\n  </main>\n";
+output += "\n    </div>\n  </main>\n";
 cb(null, output);
 ;
 } catch (e) {
@@ -1882,7 +1844,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<form class='subscribe' id='subscribe' name=\"subscribe\" action=\"/\">\n  <p class='subscribe__text'>Coming Soon in 2021. Subscribe for News</p>\n  <div class='subscribe__wrapper'>\n    <input class='subscribe__input' type='email' name='email' placeholder='Type e-mail' aria-label='E-mail' required>\n    <button class='subscribe__btn' name='btn'><span>Send</span></button>\n    <p class='subscribe__message' hidden>This is wrong email</p>\n  </div>\n  <input name=\"bot-field\" aria-label='Don’t fill this out' type='hidden'/>\n</form>\n<script>\n  document.getElementById('subscribe').addEventListener('submit', function(e) {\n    e.preventDefault();\n    const form = e.currentTarget;\n    const email = form.email;\n    const btn = form.btn;\n    const msg = document.querySelector('.subscribe__message');\n    form.classList.remove('subscribe--success', 'subscribe--error');\n   email.disabled = btn.disabled = true;\n    setTimeout(function() {\n      const success = Math.random() < 0.5;\n      if (success) {\n        form.classList.add('subscribe--success');\n        msg.textContent = 'Thank you, we added your email to the list';\n      } else {\n        form.classList.add('subscribe--error');\n        msg.textContent = 'This is wrong email';\n      }\n      email.disabled = btn.disabled = false;\n    }, 2000);\n  });\n</script>\n";
+output += "<form class='subscribe' id='subscribe' name=\"subscribe\" action=\"https://script.google.com/macros/s/AKfycbxZNVCq-9zSC6qPfDPCi0Vp5Wez9IV39B5wiANdZXdSC82CwJrpMgNW3OFrIJR-9c5N9A/exec\" method='post'>\n  <p class='subscribe__text'>Coming Soon in 2021. Subscribe for News</p>\n  <div class='subscribe__wrapper'>\n    <input class='subscribe__input' type='email' name='email' placeholder='Type e-mail' aria-label='E-mail' required>\n    <button class='subscribe__btn' name='btn'><span>Send</span></button>\n    <p class='subscribe__message' hidden>This is wrong email</p>\n  </div>\n  <input name=\"bot-field\" aria-label='Don’t fill this out' type='hidden'/>\n</form>\n<script>\n  document.getElementById('subscribe').addEventListener('submit', function(e) {\n    e.preventDefault();\n    const form = e.currentTarget;\n    const email = form.email;\n    const btn = form.btn;\n    const msg = document.querySelector('.subscribe__message');\n    form.classList.remove('subscribe--success', 'subscribe--error');\n    email.disabled = btn.disabled = true;\n\n    fetch(form.action, { method: form.method, body: new FormData(form)})\n            .then(response => {\n              form.classList.add('subscribe--success');\n              msg.textContent = 'Thank you, we added your email to the list';\n              console.log('Success!', response);\n              email.disabled = btn.disabled = false;\n            })\n            .catch(error => {\n              form.classList.add('subscribe--error');\n              msg.textContent = 'Network error. Please try later';\n              console.error('Error!', error.message);\n              email.disabled = btn.disabled = false;\n            })\n  });\n</script>\n";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
@@ -2047,7 +2009,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<footer role=\"contentinfo\" class=\"footer\">\n  ";
+output += "<footer class=\"footer\">\n  ";
 var tasks = [];
 tasks.push(
 function(callback) {
