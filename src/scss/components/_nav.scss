@@ -1,3 +1,6 @@
+.footer {
+  z-index: 1;
+}
 .nav {
   text-align: right;
 }
@@ -5,6 +8,10 @@
   margin: 0;
   list-style: none;
   padding: 0;
+}
+.nav__item {
+  margin-left: 1em;
+  display: inline-block;
 }
 .nav__link {
   display: inline-block;
