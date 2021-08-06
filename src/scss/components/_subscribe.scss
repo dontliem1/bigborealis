@@ -41,13 +41,23 @@
   margin: 0;
   padding: 1.4rem;
   outline: none;
-  transition: background-color .2s, background-position .2s;
+  transition: background-color .2s, background-position .2s, box-shadow .2s;
 }
 .subscribe__input {
   flex-grow: 1;
   border-top-left-radius: .7rem;
   border-bottom-left-radius: .7rem;
   width: 10em;
+}
+.subscribe__input:-webkit-autofill {
+  box-shadow: 0 0 0 2em #000 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+.subscribe__input:-webkit-autofill:hover,
+.subscribe__input:-webkit-autofill:focus,
+.subscribe__input:-webkit-autofill:active
+{
+  box-shadow: 0 0 0 2em #191919 inset !important;
 }
 
 .subscribe__btn {
