@@ -23,14 +23,6 @@
 .subscribe__wrapper:focus-within {
   background-position: 100% 0;
 }
-.subscribe__input:disabled,
-.subscribe__btn:disabled,
-.subscribe__wrapper:focus-within .subscribe__input,
-.subscribe__wrapper:focus-within .subscribe__btn,
-.subscribe__wrapper:hover .subscribe__input,
-.subscribe__wrapper:hover .subscribe__btn {
-  background-color: #191919;
-}
 .subscribe__input,
 .subscribe__btn {
   background-color: #000;
@@ -58,6 +50,10 @@
 .subscribe__input:-webkit-autofill:active
 {
   box-shadow: 0 0 0 2em #191919 inset !important;
+}
+.subscribe__input:-webkit-autofill::first-line {
+  font-size: 1.4rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .subscribe__btn {
@@ -107,6 +103,17 @@
 .subscribe__btn:enabled:hover {
   background-position: 100% 0;
 }
+.subscribe__input:disabled,
+.subscribe__btn:disabled,
+.subscribe__wrapper:focus-within .subscribe__input,
+.subscribe__wrapper:focus-within .subscribe__btn,
+.subscribe__wrapper:hover .subscribe__input,
+.subscribe__wrapper:hover .subscribe__btn {
+  background-color: #191919;
+}
+.subscribe__input:disabled:-webkit-autofill {
+  box-shadow: 0 0 0 2em #191919 inset !important;
+}
 .subscribe__message {
   position: absolute;
   top: -3em;
@@ -129,7 +136,7 @@
 .subscribe__wrapper:focus-within .subscribe__message {
   display: none;
 }
-@media (min-width: 60em) {
+@media (min-width: 70em) {
   .subscribe__text {
     margin-bottom: 1.6rem;
   }
@@ -139,5 +146,13 @@
   }
   .subscribe__message {
     font-size: 1.6rem;
+  }
+  .subscribe__input:-webkit-autofill::first-line {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 110em) {
+  .subscribe__input:-webkit-autofill::first-line {
+    font-size: 2.4rem;
   }
 }
