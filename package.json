@@ -15,12 +15,13 @@
     "semver": "^6.3.0",
     "slugify": "^1.4.0",
     "stalfos": "github:hankchizljaw/stalfos#c8971d22726326cfc04089b2da4d51eeb1ebb0eb"
- },
+  },
   "devDependencies": {
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
     "bl": "^3.0.0",
     "chokidar-cli": "^2.1.0",
     "cross-env": "^5.2.1",
+    "gh-pages": "^3.2.3",
     "make-dir-cli": "^2.0.0",
     "prettier": "^1.19.1",
     "rollup": "^1.32.1",
@@ -33,6 +34,7 @@
     "sass:process": "npm run sass:tokens && sass src/scss/global.scss src/_includes/assets/css/global.css --style=compressed",
     "cms:precompile": "make-dir dist/admin && nunjucks-precompile src/_includes > dist/admin/templates.js -i \"\\.(njk|css|svg)$\"",
     "cms:bundle": "rollup --config",
+    "deploy": "gh-pages -d build",
     "start": "concurrently \"npm run sass:process -- --watch\" \"npm run cms:bundle -- --watch\" \"chokidar \\\"src/_includes/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
     "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
     "production": "npm run sass:process && npm run cms:precompile && npm run cms:bundle && npx eleventy"
