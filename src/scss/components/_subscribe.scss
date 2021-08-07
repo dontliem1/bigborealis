@@ -42,6 +42,7 @@
   border-top-left-radius: .7rem;
   border-bottom-left-radius: .7rem;
   width: 10em;
+  padding-right: 0;
 }
 .subscribe__input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 300px #000 inset !important;
@@ -50,8 +51,10 @@
   background-clip: content-box !important;
 }
 .subscribe__wrapper:hover .subscribe__input:-webkit-autofill,
+.subscribe__wrapper:focus-within .subscribe__input:-webkit-autofill,
 .subscribe__input:-webkit-autofill:focus,
-.subscribe__input:-webkit-autofill:active
+.subscribe__input:-webkit-autofill:active,
+.subscribe__input:disabled:-webkit-autofill
 {
   -webkit-box-shadow: 0 0 0 300px #191919 inset !important;
   background-color: #191919 !important;
@@ -61,7 +64,12 @@
   font-size: 1.6rem;
   font-family: 'Inter', sans-serif;
 }
-
+.subscribe__shadow {
+  background: linear-gradient(90deg, rgba(0,0,0,0),rgba(0,0,0,1));
+  padding: .5em;
+  align-self: stretch;
+  margin-left: -1em;
+}
 .subscribe__btn {
   font-weight: bold;
   border-top-right-radius: .7rem;
@@ -117,8 +125,10 @@
 .subscribe__wrapper:hover .subscribe__btn {
   background-color: #191919;
 }
-.subscribe__input:disabled:-webkit-autofill {
-  box-shadow: 0 0 0 2em #191919 inset !important;
+.subscribe__wrapper:hover .subscribe__shadow,
+.subscribe__wrapper:focus-within .subscribe__shadow,
+.subscribe__input:disabled + .subscribe__shadow {
+  background: linear-gradient(90deg, rgba(25,25,25,0), rgba(25,25,25,1));
 }
 .subscribe__message {
   position: absolute;
