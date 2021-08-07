@@ -77,7 +77,7 @@ module.exports = function(config) {
   });
 
   return {
-    pathPrefix: "/bigborealis/",
+    // pathPrefix: "/bigborealis/",
     dir: {
       input: 'src',
       output: 'dist'
