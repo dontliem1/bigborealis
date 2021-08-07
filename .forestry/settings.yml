@@ -10,7 +10,7 @@ sections:
   path: src/index.md
   label: Coming soon page
   templates:
-    - homepage
+  - homepage
 - type: directory
   path: src/posts
   label: Posts
