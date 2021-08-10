@@ -1,7 +1,7 @@
 <form class='subscribe' id='subscribe' name="subscribe" action="https://script.google.com/macros/s/AKfycbxZNVCq-9zSC6qPfDPCi0Vp5Wez9IV39B5wiANdZXdSC82CwJrpMgNW3OFrIJR-9c5N9A/exec" method='post'>
-  <p class='subscribe__text'>Coming Soon in 2021. Subscribe for News</p>
+  <p class='subscribe__text'>Coming Soon in 2021. Subscribe to updates</p>
   <div class='subscribe__wrapper'>
-    <input class='subscribe__input' type='email' name='email' placeholder='Type e-mail' aria-label='E-mail' required>
+    <input class='subscribe__input' type='email' name='email' placeholder='Enter your email' aria-label='E-mail' required>
     <span class='subscribe__shadow'></span>
     <button class='subscribe__btn' name='btn'><span>Send</span></button>
     <p class='subscribe__message' hidden>This is wrong email</p>
@@ -23,7 +23,7 @@
     fetch(form.action, {method: form.method, body: formData})
             .then(async response => {
               form.classList.add('subscribe--success');
-              msg.textContent = 'Thank you, we added your email to the list';
+              msg.textContent = "Thank you, we've just added your email to the list";
               console.log('Success!', await response.json().then(data => data));
               email.disabled = btn.disabled = false;
             })
