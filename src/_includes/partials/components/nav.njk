@@ -4,13 +4,13 @@
       {% for item in navigation.items %}
         {% set relAttribute = '' %}
 
-        {% if item.rel %}
-          {% set relAttribute = ' rel="' + item.rel + '"' %}
+        {% if item.external %}
+          {% set externalAttribute = ' rel="noopener noreferrer" target="_blank"' %}
         {% endif %}
 
           {% if page.url !== item.url %}
             <li class="nav__item">
-              <a class='nav__link' href="{{ item.url | url }}"{{ relAttribute | safe }}>{{ item.text }}</a>
+              <a class='nav__link' href="{{ item.url | url }}"{{ externalAttribute | safe }}>{{ item.text }}</a>
             </li>
           {% endif %}
       {% endfor %}

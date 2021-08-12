@@ -9,6 +9,11 @@
       "text": "Data Privacy",
       "url": "/privacy/",
       "external": false
+    },
+    {
+      "text": "Instagram",
+      "url": "https://www.instagram.com/bigexperiential/",
+      "external": true
     }
   ]
 }
