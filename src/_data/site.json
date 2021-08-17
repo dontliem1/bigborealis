@@ -2,11 +2,10 @@
   "showThemeCredit": false,
   "name": "Big Borealis",
   "shortDesc": "Immersive shows around the world.",
-  "url": "https://dontliem1.github.io/bigborealis/",
+  "url": "https://bigborealis.com/",
   "authorEmail": "dontliem1@gmail.com",
   "authorHandle": "@dontliem1",
   "authorName": "Lepekhin Studio",
   "enableThirdPartyComments": false,
-  "maxPostsPerPage": 5,
-  "faviconPath": "/images/favicon.png"
+  "maxPostsPerPage": 5
 }

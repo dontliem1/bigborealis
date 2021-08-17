@@ -35,6 +35,22 @@ module.exports = function(config) {
   config.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
   config.addPassthroughCopy('src/robots.txt');
 
+  config.addPassthroughCopy('src/android-chrome-192x192.png');
+  config.addPassthroughCopy('src/android-chrome-512x512.png');
+  config.addPassthroughCopy('src/apple-touch-icon-180×180.png');
+  config.addPassthroughCopy('src/browserconfig.xml');
+  config.addPassthroughCopy('src/favicon-16×16.png');
+  config.addPassthroughCopy('src/favicon-32×32.png');
+  config.addPassthroughCopy('src/favicon.ico');
+  config.addPassthroughCopy('src/mstile-70×70.png');
+  config.addPassthroughCopy('src/mstile-150×150.png');
+  config.addPassthroughCopy('src/mstile-310×150.png');
+  config.addPassthroughCopy('src/mstile-310×310.png');
+  config.addPassthroughCopy('src/og-image-1020×456.png');
+  config.addPassthroughCopy('src/og-image-1200×620.png');
+  config.addPassthroughCopy('src/safari-pinned-tab.svg');
+  config.addPassthroughCopy('src/site.webmanifest');
+
   const now = new Date();
 
   // Custom collections

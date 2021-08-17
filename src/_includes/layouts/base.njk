@@ -5,8 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--suppress HtmlUnknownTarget -->
-  <link rel="icon" href="{{ site.faviconPath }}" type="image/png" />
+  <!--Open Graph-->
+  <meta property="og:title" content="Genius Immersive Show" />
+  <meta property="og:description" content ="Creative journey through the eyes of Leonardo Da Vinci today. Next generation of immersive shows and absolutely new experience." />
+  <meta property = "og:type" content = "website" />
+  <meta property = "og:url" content = "{{ site.url }}" />
+  <meta property="og:image"  content="{{ site.url }}og-image-1200×620.png" />
+  <meta property="vk:image"  content="{{ site.url }}og-image-1020×456" />
+  <meta name="twitter:site" content="@bigexperiential/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Genius Immersive Show">
+  <meta name="twitter:description" content="Creative journey through the eyes of Leonardo Da Vinci today. Next generation of immersive shows and absolutely new experience.">
+  <meta name="twitter:image" content="{{ site.url }}og-image-1200×620.png.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180×180.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-config" content="browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#000000">
   {% include "partials/global/meta-info.njk" %}
   <link rel='stylesheet' href='{{ '/global.css' | url }}'>
   {% block head %}
