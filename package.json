@@ -4,8 +4,7 @@
   "description": "A simple Eleventy starter kit to help you have a blog of your own",
   "main": "index.js",
   "engines": {
-    "node": ">=14.17.0",
-    "npm": ">=7.19.1"
+    "node": ">=14.17.0"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
