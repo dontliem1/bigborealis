@@ -8,9 +8,6 @@ fields:
 - type: textarea
   name: metaDesc
   label: Description for search engines
-- name: socialImage
-  type: file
-  label: Picture for social media
 - name: logo
   type: file
   label: Logo

@@ -1,3 +1,4 @@
+{% set pageTitle = title + ' - ' + site.name %}
 <!DOCTYPE html>
 <html lang="en" class="no-js{{ ' home' if page.url === '/' }}">
 <!--suppress HtmlRequiredTitleElement -->
@@ -5,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ pageTitle }}</title>
   <!--Open Graph-->
   <meta property="og:title" content="Genius Immersive Show" />
   <meta property="og:description" content ="Creative journey through the eyes of Leonardo Da Vinci today. Next generation of immersive shows and absolutely new experience." />
@@ -27,12 +29,11 @@
   <meta name="msapplication-config" content="browserconfig.xml" />
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="theme-color" content="#000000">
-  {% include "partials/global/meta-info.njk" %}
   <link rel='stylesheet' href='{{ '/global.css' | url }}'>
   {% block head %}
   {% endblock %}
 </head>
-<body class='frame' {% if (background and page.url === '/') %} style='background-image: url("{{ background }}")' {% endif %}>
+<body class='frame' {% if (background and page.url === '/') %} style='background-image: url("/images/{{ background }}")' {% endif %}>
   <span class='frame__target'></span>
   <span class='frame__swatches'></span>
   <span class='frame__target'></span>
