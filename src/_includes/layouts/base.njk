@@ -7,9 +7,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ pageTitle }}</title>
+  {% if metaDesc %}
+    <meta name="description" content="{{ metaDesc }}" />
+    <meta name="twitter:description" content="{{ metaDesc }}" />
+    <meta property="og:description" content="{{ metaDesc }}" />
+  {% endif %}
   <!--Open Graph-->
   <meta property="og:title" content="Genius Immersive Show" />
-  <meta property="og:description" content ="Creative journey through the eyes of Leonardo Da Vinci today. Next generation of immersive shows and absolutely new experience." />
   <meta property = "og:type" content = "website" />
   <meta property = "og:url" content = "{{ site.url }}" />
   <meta property="og:image"  content="{{ site.url }}og-image-1200×620.png" />
@@ -17,7 +21,6 @@
   <meta name="twitter:site" content="@bigexperiential/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Genius Immersive Show">
-  <meta name="twitter:description" content="Creative journey through the eyes of Leonardo Da Vinci today. Next generation of immersive shows and absolutely new experience.">
   <meta name="twitter:image" content="{{ site.url }}og-image-1200×620.png.jpg">
 
   <!-- Favicon -->
