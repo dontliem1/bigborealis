@@ -1,42 +1,11 @@
 <form action="https://bigborealis.us5.list-manage.com/subscribe/post?u=7c4999c0b58c12e5aaa2b66f4&amp;id=4e9bbc04b7" method="post" id="subscribe" name="mc-embedded-subscribe-form" class="validate subscribe" target="_blank">
     <p class='subscribe__text'>Coming Soon in 2021. Subscribe to updates</p>
-    <div id="mc_embed_signup_scroll" class='subscribe__wrapper'>
-        <input placeholder='Enter your email' aria-label='E-mail' type="email" value="" name="EMAIL" class="required email subscribe__input" id="mce-EMAIL" required>
+    <div class='subscribe__wrapper' id="mc_embed_signup_scroll">
+        <input aria-label='E-mail' type="email" value="" name="EMAIL" class="email subscribe__input" id="mce-EMAIL" placeholder="Enter your email" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input aria-label='Boop-beep?' type="text" name="b_7c4999c0b58c12e5aaa2b66f4_4e9bbc04b7" tabindex="-1" value=""><input aria-label='GDPR' type="checkbox" id="gdpr_349290" name="gdpr[349290]" value="Y" class="av-checkbox gdpr" checked></div>
         <span class='subscribe__shadow'></span>
         <button class='subscribe__btn button' id="mc-embedded-subscribe" name='subscribe'><span>Send</span></button>
         <p class='subscribe__message' id="mce-responses" hidden>This is wrong email</p>
     </div>
-    <noscript>Turn on JavaScript in your browser for better experience.</noscript>
-    <small class='subscribe__policy'>By sending your e-mail, you acknowledge that your information will be transferred to Mailchimp for processing.
-        <a href="https://mailchimp.com/legal/" target="_blank">Learn more about Mailchimp's privacy practices here.</a> You can unsubscribe at any time by clicking the link in the footer of our emails.</small>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-        <input aria-label='Boop-beep?' type="text" name="b_7c4999c0b58c12e5aaa2b66f4_4e9bbc04b7" tabindex="-1" value="">
-    </div>
 </form>
-<script>
-  document.getElementById('subscribe').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-    const email = form.EMAIL;
-    const btn = form.subscribe;
-    const msg = document.querySelector('.subscribe__message');
-    form.classList.remove('subscribe--success', 'subscribe--error');
-    email.disabled = btn.disabled = true;
-
-    fetch(form.action, {method: form.method, body: formData})
-      .then(async response => {
-        form.classList.add('subscribe--success');
-        msg.textContent = 'Thank you, we\'ve just added your email to the list';
-        console.log('Success!', await response.json().then(data => data));
-        email.disabled = btn.disabled = false;
-      })
-      .catch(error => {
-        form.classList.add('subscribe--error');
-        msg.textContent = 'Network error. Please try later';
-        console.error('Error!', error.message);
-        email.disabled = btn.disabled = false;
-      });
-  });
-</script>
