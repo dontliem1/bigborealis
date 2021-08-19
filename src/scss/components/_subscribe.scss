@@ -19,6 +19,7 @@
   padding: .1rem;
   border-radius: .8rem;
   position: relative;
+  margin-bottom: .5em;
 }
 .subscribe__wrapper:focus-within {
   background-position: 100% 0;
@@ -65,10 +66,11 @@
   font-family: 'Inter', sans-serif;
 }
 .subscribe__shadow {
-  background: linear-gradient(90deg, rgba(0,0,0,0),rgba(0,0,0,1));
   padding: .5em;
   align-self: stretch;
   margin-left: -1em;
+  box-shadow: inset -.5em 0 .5em #000;
+  transition: box-shadow .2s;
 }
 .subscribe__btn {
   font-weight: bold;
@@ -128,7 +130,8 @@
 .subscribe__wrapper:hover .subscribe__shadow,
 .subscribe__wrapper:focus-within .subscribe__shadow,
 .subscribe__input:disabled + .subscribe__shadow {
-  background: linear-gradient(90deg, rgba(25,25,25,0), rgba(25,25,25,1));
+  box-shadow: inset -.5em 0 .5em #191919;
+
 }
 .subscribe__message {
   position: absolute;
@@ -151,6 +154,13 @@
 }
 .subscribe__wrapper:focus-within .subscribe__message {
   display: none;
+}
+@media (min-width: 48em) {
+  .subscribe__policy {
+    font-size: 1.4rem;
+    display: block;
+    line-height: 1.4;
+  }
 }
 @media (min-width: 70em) {
   .subscribe__text {
