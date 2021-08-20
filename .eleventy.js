@@ -35,8 +35,8 @@ module.exports = function(config) {
   config.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
   config.addPassthroughCopy('src/robots.txt');
 
-  config.addPassthroughCopy('src/android-chrome-192x192.png');
-  config.addPassthroughCopy('src/android-chrome-512x512.png');
+  config.addPassthroughCopy('src/android-chrome-192×192.png');
+  config.addPassthroughCopy('src/android-chrome-512×512.png');
   config.addPassthroughCopy('src/apple-touch-icon-180×180.png');
   config.addPassthroughCopy('src/browserconfig.xml');
   config.addPassthroughCopy('src/favicon-16×16.png');
