@@ -1,8 +1,12 @@
 .footer {
   z-index: 1;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .nav {
-  text-align: right;
+  margin-left: auto;
 }
 .nav__list {
   margin: 0;
@@ -10,8 +14,10 @@
   padding: 0;
 }
 .nav__item {
-  margin-left: 1em;
   display: inline-block;
+}
+.nav__item:not(:first-child) {
+  margin-left: 1em;
 }
 .nav__link {
   display: inline-block;
@@ -26,8 +32,10 @@
   color: #FF00F5;
 }
 @media (min-width: 48em) {
-  .nav__link {
+  .footer {
     font-size: 1.6rem;
+  }
+  .nav__link {
     padding: 1em 0;
   }
 }

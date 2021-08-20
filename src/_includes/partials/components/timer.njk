@@ -1,0 +1,19 @@
+{% if startDate %}
+  <div class='timer'>Starts in <span id='timer'></span></div>
+  <script>
+    const timer = document.getElementById('timer');
+    const startDate =( new Date('{{ startDate }}')).getTime();
+
+    function printDifference(deadline, element) {
+      let difference = deadline - Date.now();
+      let days = Math.floor((difference / (1000 * 60 * 60 * 24)));
+      let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((difference % (1000 * 60)) / 1000) + 's';
+      element.innerText = (days ? days+'d ' : '') + (hours ? hours+'h ' : '') + (minutes ? minutes+'m ' : '') + seconds;
+    }
+    printDifference(startDate, timer);
+
+    setInterval(() => printDifference(startDate, timer), 500);
+  </script>
+{% endif %}
