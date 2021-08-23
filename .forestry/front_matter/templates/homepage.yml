@@ -22,3 +22,7 @@ fields:
 - name: background
   type: file
   label: Background image
+- name: backgroundVideo
+  type: file
+  label: Background video
+  description: .mp4 video for background

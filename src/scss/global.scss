@@ -26,6 +26,11 @@ body {
   background-repeat: no-repeat;
   min-height: 100%;
 }
+@media (orientation: portrait) {
+  body {
+    background-position: 65% 50%;
+  }
+}
 
 main {
   flex-grow: 1;
