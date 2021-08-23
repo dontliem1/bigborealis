@@ -39,7 +39,7 @@
 <body class='frame' {% if (background and backgroundVideo === '' and page.url === '/') %} style='background-image: url("/images/{{ background }}")' {% endif %}>
   {% if (backgroundVideo and page.url === '/') %}
     <video class='frame__video' {% if (background) %}poster='/images/{{ background }}'{% endif %} playsinline muted loop autoplay>
-      <source src="/images/{{ backgroundVideo }}" type="video/mp4">
+      <source src="/images/{{ backgroundVideo }}" type="video/webm">
     </video>
   {% endif %}
   <span class='frame__target'></span>

@@ -25,4 +25,4 @@ fields:
 - name: backgroundVideo
   type: file
   label: Background video
-  description: .mp4 video for background
+  description: .webm video for background
