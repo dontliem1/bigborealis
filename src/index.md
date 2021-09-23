@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Genius Immersive Show
+title: Genius Immersive Experience
 metaDesc: Creative journey through the eyes of Leonardo Da Vinci. The next-generation immersive show and an absolutely new experience.
 logo: images/logo.svg
 background: "upload/Genius-PresaleSite-Background-01.png"
