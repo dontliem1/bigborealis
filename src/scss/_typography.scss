@@ -20,6 +20,17 @@
     url('fonts/inter-v3-latin-700.woff') format('woff');
   font-display: swap;
 }
+/* inter-600 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  //noinspection CssUnknownTarget
+  src:
+    url('fonts/inter-v3-latin-600.woff2') format('woff2'),
+    url('fonts/inter-v3-latin-600.woff') format('woff');
+  font-display: swap;
+}
 body {
   font-family: 'Inter', sans-serif;
 }

@@ -11,10 +11,10 @@ html {
   min-height: 100%;
   display: flex;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 body {
-  scroll-behavior: smooth;
   font-size: 1.2em;
   display: flex;
   flex-direction: column;
