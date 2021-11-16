@@ -79,16 +79,20 @@
       </div>
       <p class="promo__description">The Genius Immersive Experience is a creative journey through the eyes of Leonardo Da Vinci <span>today</span>. It’s the next generation of immersive shows and an absolutely new experience.</p>
     </section>
-    <nav class="navigation wrapper">
-      <img class="navigation__logo" src="../images/nav-logo.svg" alt="Genius Immersive Show" width="140" height="70">
-      <ul class="navigation__list">
-        <li><a href="#concept">Concept</a></li>
-        <li><a href="#announcement">Locations</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#partners">Partners</a></li>
-        <li><a href="#faqs">FAQs</a></li>
-        <li class="navigation__buy-ticket"><a href="https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663">Buy Ticket</a></li>
-      </ul>
+    <nav id='navigation' class="navigation wrapper navigation--sticky">
+      <span class='navigation__logo_wrapper'>
+        <img class="navigation__logo" src="../images/nav-logo.svg" alt="Genius Immersive Show" width="140" height="70">
+      </span>
+      <div class='navigation__list_wrapper'>
+        <ul class="navigation__list">
+          <li><a href="#concept">Concept</a></li>
+          <li><a href="#announcement">Locations</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ul>
+        <a class='navigation__button button--green' href="https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663">Buy Ticket</a>
+      </div>
     </nav>
     <section class="advantages wrapper">
       <h2 class="advantages__title title">Genius is not yet<br> another show</h2>
@@ -363,6 +367,21 @@
   <span class='frame__code'>EJ 01 5790 8702+33</span>
   <span class='frame__scale'><span></span> </span><span class='frame__target'></span>
   <span class='frame__target'></span>
+
+  <script>
+    // Показ логотипа в навигации
+    const navigation = document.getElementById('navigation');
+    const intersectionObserver = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) {
+        navigation.classList.remove('navigation--sticky');
+      } else {
+        navigation.classList.add('navigation--sticky');
+      }
+    }, {
+      rootMargin: '0px 0px -70% 0px'
+    });
+    intersectionObserver.observe(navigation);
+  </script>
 </body>
 
 </html>
