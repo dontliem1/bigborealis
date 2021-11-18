@@ -1,7 +1,56 @@
 // //стили для страницы /new
 .wrapper {
-  max-width: 117rem;
+  max-width: 120rem;
+  padding: 0 15px;
   margin: 0 auto;
+}
+
+.button-green {
+  text-decoration: none;
+  outline: none;
+  font-weight: 600;
+  display: inline-block;
+  background-image: linear-gradient(96.62deg, #82ff80 1.21%, #ffc700 96.06%);
+  border-radius: 8px;
+  color: #000;
+  padding: 0.8em 1.1em;
+  text-align: center;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-size: 200% 200%;
+    animation: gradient 5s ease-out infinite;
+  }
+}
+
+.title {
+  font-family: 'GT Super Display', serif;
+  font-weight: 900;
+  font-size: 3.7em;
+  line-height: 1em;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to left, #80ff98, #ffc700);
+  margin: 0;
+  background-size: 200% 200%;
+  animation: gradient 5s ease-out infinite;
+  // margin-top: 3em;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 .promo {
@@ -33,6 +82,11 @@
   background-repeat: no-repeat;
   margin-top: 5.1em;
   display: flex;
+
+  @media (min-width: 70em) {
+    width: 47.6rem;
+    height: 30.8rem;
+  }
 }
 
 .promo__logo svg {
@@ -44,25 +98,28 @@
   }
 
   @media (min-width: 70em) {
-    width: 47rem;
+    width: 39rem;
   }
 }
 
 .promo__description {
+  font-family: 'GT Super Display', serif;
+  font-weight: 900;
   text-align: center;
   margin: 0;
   font-size: 2.666em;
+  padding: 0 0.5em;
 }
 
 .navigation {
   position: sticky;
-  top: .5em;
+  top: 0.5em;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 2.6em;
-  padding: 0.66em 1em;
+  padding: 0.4em 0.4em 0.3em;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -70,14 +127,15 @@
   width: 100%;
   z-index: 5;
 }
-.navigation__logo_wrapper {
+
+.navigation__logo-wrapper {
   margin-right: auto;
   flex-basis: 100px;
   flex-shrink: 1;
   flex-grow: 5;
   overflow-x: hidden;
   transition-property: flex-basis, flex-grow;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
 .navigation__logo {
@@ -92,7 +150,7 @@
   opacity: 1;
 }
 
-.navigation__list_wrapper {
+.navigation__list-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -108,19 +166,6 @@
   flex-wrap: wrap;
 }
 
-.button--green {
-  text-decoration: none;
-  outline: none;
-  font-weight: 600;
-  display: inline-block;
-  background-image: linear-gradient(96.62deg, #82ff80 1.21%, #ffc700 96.06%);
-  border-radius: 8px;
-  color: #000;
-  padding: .8em 1.1em;
-  text-align: center;
-  flex-shrink: 0;
-}
-
 .navigation__list li {
   display: flex;
   justify-content: center;
@@ -134,70 +179,28 @@
   font-weight: 400;
   font-size: 0.83em;
   display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
-//.navigation__buy-ticket {
-//  width: 6.2em;
-//  height: 2.33em;
-//  background-image: linear-gradient(96.62deg, #82ff80 1.21%, #ffc700 96.06%);
-//  border-radius: 8px;
-//  color: black;
-//
-//  & a {
-//    font-weight: 600;
-//    width: 100%;
-//    height: 100%;
-//    display: inline-flex;
-//    justify-content: center;
-//    align-items: center;
-//  }
-//}
-
-.title {
-  font-size: 3.7em;
-  line-height: 1em;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: linear-gradient(to left, #80ff98, #ffc700);
-  margin: 0;
-  background-size: 200% 200%;
-  animation: gradient 5s ease-out infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
-}
 .advantages {
   margin-top: 7.9em;
 }
 
 .advantages__title {
-  margin-bottom: 0.38em;
+  margin-bottom: 0.2em;
+  padding: 0.1em;
 }
 
 .advantages__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 2.6em;
+  grid-column-gap: 0.9em;
 }
 
 .advantages__wrapper p {
   margin: 0;
   padding-right: 23px;
-  padding-left: 0.26em;
 }
 
 .advantages__description {
@@ -207,37 +210,53 @@
 }
 
 .advantages__item {
+  padding-top: 5em;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-start;
 
   p {
-    padding-left: 0.5em;
+    padding-top: 1em;
+    padding-left: 0;
   }
 
   &:nth-of-type(2n + 1) {
-    transform: translateY(-7em);
+    transform: translateY(-12em);
 
     p {
-      padding-left: 1.1em;
+      padding-left: 0.2em;
     }
   }
 
-  &--touch {
-    background-image: url('../images/touch.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 27.8em;
-  }
-
   &--play {
-    position: relative;
+    justify-content: flex-start;
+    transform: translateY(3em);
 
     svg {
       width: 20em;
       height: 11.5em;
     }
   }
+
+  &--generation img {
+    width: 19em;
+    height: 13.3em;
+  }
+
+  &--touch img {
+    width: 17.6em;
+    height: 17.6em;
+  }
+
+  &--edutainment img {
+    width: 13.25em;
+    height: 23em;
+  }
+}
+
+.advantages__picture-wrapper {
+  position: relative;
 }
 
 .advantages__button {
@@ -249,53 +268,82 @@
   outline: none;
   border: none;
   position: absolute;
+  background-color: #141414;
+  color: #ffffff;
   left: 50%;
-  top: 26%;
-  transform: translate3d(-60%, 0, 0);
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1);
+  cursor: pointer;
+  transition-duration: 500ms;
+
+  &:hover {
+    transform: translate3d(-50%, -50%, 0) scale(1.1);
+  }
 }
 
 .concept__wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 0;
 }
 
 .concept__description {
-  background-repeat: no-repeat;
   min-height: 618px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-position: bottom;
+}
 
-  &--preface {
+.concept__picture {
+  margin: 0 -2.3em;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--glow {
+    height: 472px;
     background-image: url('../images/glow@1x.jpg');
+  }
+
+  &--people {
+    height: 759px;
+    background-image: url('../images/people.jpg');
+  }
+
+  &--inventor {
+    height: 760px;
+    background-image: url('../images/inventor.jpg');
   }
 }
 
 .concept__description--emergence {
-  margin-top: 80px;
-  background-image: url('../images/vitruvian-man@1x.jpg');
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.29em;
   background-repeat: no-repeat;
-  background-position: top right;
-  position: relative;
-  min-height: 32.75em;
-  width: 100%;
+  margin-top: 2em;
+
+
+  .concept__picture--vitruvian {
+    background-image: url('../images/vitruvian-man@1x.jpg');
+    background-position: top right;
+    background-size: 23.75em 100%;
+    height: 20.33em;
+  }
+  
+  .concept__picture--cube-west {
+    background-image: url('../images/cube-west@1x.jpg');
+    height: 20.05em;
+    background-size: 23.75em 100%;
+    margin-top: -8em;
+  }
 
   p {
     max-width: 22.7em;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    background-image: url('../images/cube-west@1x.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 20.25em;
-    bottom: 0;
-    left: 0;
+    padding-right: 1.8em;
+    margin: 0;
+    padding-bottom: 9em;
   }
 }
 
@@ -304,17 +352,29 @@
 }
 
 .concept__quote {
-  max-width: 839px;
+  font-family: 'GT Super Display', serif;
+  font-weight: 400;
+  font-style: italic;
   text-align: center;
   align-self: center;
   font-size: 2em;
-  align-items: center;
+
+  &:first-of-type {
+    max-width: 839px;
+  }
+
+  @media (min-width: 70em) {
+    &:first-of-type {
+      max-width: 1200px;
+    }
+  }
 }
 
 .announcement__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: 8.3em;
 }
 
 .announcement__title {
@@ -326,8 +386,9 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(37rem, 1fr));
+  grid-template-columns: repeat(auto-fit, 37rem);
   gap: 1.2em;
+  justify-content: center;
 }
 
 .announcement li {
@@ -363,14 +424,9 @@
   text-decoration: none;
   outline: none;
   font-size: 0.84em;
-  min-width: 7.45em;
-  min-height: 2.8em;
   margin-top: 0.6em;
   margin-bottom: 1em;
   font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: linear-gradient(96.62deg, #82ff80 1.21%, #ffc700 96.06%);
   border-radius: 8px;
   color: black;
@@ -433,15 +489,16 @@
 }
 
 .subscription__link {
-  min-height: 3.2em;
-  margin: 0;
   border: none;
+  padding: 1.08em 1.25em;
+  margin-bottom: 0.6em;
 }
 
 .team__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 8.3em;
 }
 
 .team__title {
@@ -462,7 +519,8 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 3fr 2fr 2fr;
+  gap: 1.6em;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   gap: 0.5em;
 }
 
@@ -470,20 +528,14 @@
   display: flex;
   flex-direction: column;
 
-  &:first-of-type {
-    grid-column: 1 / span 3;
-    flex-direction: row;
+  img {
+    width: 15em;
+    height: 15em;
   }
+}
 
-  &:nth-of-type(2) {
-    grid-column: 2 / span 3;
-    flex-direction: row;
-    transform: translate3d(0, -2em, 0);
-  }
-
-  &:nth-of-type(3n) {
-    transform: translate3d(0, -8em, 0);
-  }
+.partners__wrapper {
+  margin-top: 8.3em;
 }
 
 .partners__title {
@@ -503,21 +555,26 @@
 .partners__item {
   justify-self: center;
 
-  &:nth-of-type(3n + 1) {
+  &:first-of-type {
+    grid-column: span 2;
+    justify-self: end;
+  }
+
+  &:nth-of-type(3n + 2) {
     justify-self: start;
     margin-left: 1.3em;
   }
 
-  &:nth-of-type(3n + 2) {
+  &:nth-of-type(3n + 3) {
     padding-top: 1.3em;
     margin-left: 1.3em;
   }
 
-  &:nth-of-type(2n + 3) {
+  &:nth-of-type(2n + 4) {
     margin-left: 5.3em;
   }
 
-  &:nth-of-type(4) {
+  &:nth-of-type(5) {
     padding-top: 1.9em;
   }
 
@@ -527,12 +584,21 @@
   }
 }
 
+.faqs__wrapper {
+  margin-top: 11.25em;
+}
+
 .faqs__time,
 .faqs__covid {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: #141414;
+  margin-bottom: 1em;
+}
+
+.faqs__covid {
+  padding-bottom: 4em;
 }
 
 .faqs__button {

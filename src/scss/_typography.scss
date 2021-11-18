@@ -31,13 +31,40 @@
     url('fonts/inter-v3-latin-600.woff') format('woff');
   font-display: swap;
 }
+
+/* gt-900*/
+@font-face {
+  font-family: 'GT Super Display';
+  font-style: normal;
+  font-weight: 900;
+  //noinspection CssUnknownTarget
+  src:
+    url('fonts/gt-super-display-900.woff2') format('woff2'),
+    url('fonts/gt-super-display-900.woff') format('woff');
+  font-display: swap;
+}
+
+/* gt-400*/
+@font-face {
+  font-family: 'GT Super Display';
+  font-style: italic;
+  font-weight: 400;
+  //noinspection CssUnknownTarget
+  src:
+    url('fonts/gt-super-display-400-italic.woff2') format('woff2'),
+    url('fonts/gt-super-display-400-italic.woff') format('woff');
+  font-display: swap;
+}
+
 body {
   font-family: 'Inter', sans-serif;
 }
+
 .page__title {
   margin-top: 0;
   margin-bottom: .25em;
 }
+
 .page__content {
   max-width: 34em;
 }
