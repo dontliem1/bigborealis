@@ -119,7 +119,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 2.6em;
-  padding: 0.4em 0.4em 0.3em;
+  padding: 0.4em 0.4em 0.3em 1.4em;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -176,6 +176,7 @@
 
 .navigation__link {
   margin-right: 1.2em;
+  padding-top: 0.3em;
   transition-duration: 300ms;
 
   svg {
