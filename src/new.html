@@ -32,91 +32,51 @@
 <body class='frame'>
   <span class='frame__target'></span> <span class='frame__swatches'></span> <span class='frame__target'></span>
   <span class='frame__left'></span>
-  <main>
+  <main class="wrapper">
+      <nav id='navigation' class="navigation">
+        <span class='navigation__logo-wrapper'>
+          <img class="navigation__logo" src="../images/mini-logo.svg" alt="Genius Immersive Show" width="56" height="52">
+        </span>
+        <div class='navigation__list-wrapper'>
+          <ul class="navigation__list">
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#announcement">Locations</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+          </ul>
+          <a class="navigation__link" href="https://www.instagram.com/bigexperiential/?utm_medium=copy_link">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5008 0C8.37638 0 7.98544 0.0124602 6.75811 0.0685312C5.80413 0.0878986 4.86036 0.269069 3.96702 0.60432C3.19975 0.892958 2.50455 1.34526 1.92978 1.92978C1.34526 2.50455 0.892958 3.19975 0.60432 3.96702C0.269069 4.86036 0.0878986 5.80413 0.0685312 6.75811C0.0124602 7.98544 0 8.37638 0 11.5008C0 14.6252 0.0124602 15.0161 0.0685312 16.2419C0.0875066 17.1959 0.268689 18.1397 0.60432 19.033C0.892193 19.8006 1.3446 20.496 1.92978 21.0702C2.50449 21.6552 3.19967 22.108 3.96702 22.3972C4.86069 22.7311 5.80431 22.9117 6.75811 22.9315C7.98544 22.9875 8.37638 23 11.5008 23C14.6252 23 15.0161 22.9875 16.2419 22.9315C17.1957 22.9121 18.1394 22.7314 19.033 22.3972C19.797 22.1015 20.4909 21.6495 21.0702 21.0702C21.6495 20.4909 22.1015 19.797 22.3972 19.033C22.7314 18.1394 22.9121 17.1957 22.9315 16.2419C22.9875 15.0161 23 14.6236 23 11.5008C23 8.37794 22.9875 7.98544 22.9315 6.75811C22.9117 5.80431 22.7311 4.86069 22.3972 3.96702C22.108 3.19967 21.6552 2.50449 21.0702 1.92978C20.496 1.3446 19.8006 0.892193 19.033 0.60432C18.1397 0.268689 17.1959 0.0875066 16.2419 0.0685312C15.0161 0.0124602 14.6236 0 11.5008 0ZM11.5008 2.07151C14.5707 2.07151 14.9273 2.08397 16.1469 2.13848C17.2683 2.18988 17.8773 2.37834 18.2822 2.53565C18.7818 2.71978 19.2336 3.01357 19.6046 3.39541C19.9874 3.76591 20.2818 4.21787 20.4659 4.71775C20.6217 5.12271 20.8101 5.7317 20.8615 6.85312C20.9176 8.06643 20.9285 8.42933 20.9285 11.5008C20.9285 14.5722 20.9176 14.9273 20.8615 16.1469C20.8101 17.2683 20.6232 17.8773 20.4659 18.2822C20.274 18.7773 19.981 19.2269 19.6055 19.6024C19.2301 19.9778 18.7804 20.2709 18.2854 20.4628C17.8804 20.6185 17.2714 20.807 16.15 20.8584C14.9382 20.9145 14.5738 20.9254 11.5039 20.9254C8.43401 20.9254 8.06955 20.9145 6.85623 20.8584C5.73481 20.807 5.12582 20.6201 4.72086 20.4628C4.22099 20.2786 3.76902 19.9842 3.39852 19.6015C3.01668 19.2305 2.72289 18.7786 2.53877 18.2791C2.38302 17.8742 2.193 17.2652 2.1416 16.1438C2.08709 14.932 2.07463 14.5675 2.07463 11.4977C2.07463 8.42778 2.08709 8.06332 2.1416 6.85C2.193 5.72858 2.38146 5.11959 2.53877 4.71463C2.7224 4.21653 3.01508 3.76579 3.39541 3.39541C3.76637 3.01357 4.21824 2.71978 4.71775 2.53565C5.12271 2.3799 5.7317 2.18988 6.85312 2.13848C8.06643 2.08397 8.42933 2.07151 11.5008 2.07151Z" fill="white"/>
+              <path d="M11.5008 15.3339C10.7422 15.3343 10.0006 15.1096 9.36979 14.6883C8.73895 14.2671 8.24721 13.6682 7.95678 12.9675C7.66636 12.2667 7.59029 11.4956 7.7382 10.7516C7.88611 10.0076 8.25135 9.3242 8.78773 8.78782C9.32411 8.25144 10.0075 7.8862 10.7515 7.73829C11.4955 7.59038 12.2666 7.66645 12.9674 7.95687C13.6681 8.2473 14.267 8.73904 14.6883 9.36988C15.1095 10.0007 15.3342 10.7423 15.3339 11.5009C15.3339 12.5175 14.93 13.4924 14.2112 14.2113C13.4923 14.9301 12.5174 15.3339 11.5008 15.3339ZM11.5008 5.59473C10.3326 5.59442 9.19055 5.94055 8.21908 6.58933C7.24762 7.23812 6.49037 8.16043 6.04311 9.23961C5.59585 10.3188 5.47866 11.5064 5.70638 12.6521C5.93409 13.7979 6.49647 14.8505 7.3224 15.6766C8.14833 16.5027 9.2007 17.0654 10.3464 17.2934C11.4921 17.5214 12.6798 17.4046 13.759 16.9576C14.8383 16.5106 15.7609 15.7536 16.4099 14.7823C17.0589 13.811 17.4054 12.6691 17.4054 11.5009C17.4054 9.93473 16.7833 8.43272 15.676 7.32515C14.5688 6.21757 13.0669 5.59514 11.5008 5.59473Z" fill="white"/>
+              <path d="M19.0189 5.36093C19.0189 5.63386 18.938 5.90066 18.7864 6.12759C18.6347 6.35453 18.4192 6.5314 18.1671 6.63585C17.9149 6.7403 17.6374 6.76762 17.3698 6.71438C17.1021 6.66113 16.8562 6.5297 16.6632 6.33671C16.4702 6.14372 16.3388 5.89783 16.2855 5.63014C16.2323 5.36246 16.2596 5.08499 16.364 4.83283C16.4685 4.58068 16.6454 4.36516 16.8723 4.21352C17.0992 4.06189 17.366 3.98096 17.639 3.98096C17.8202 3.98075 17.9998 4.01631 18.1673 4.08558C18.3348 4.15486 18.487 4.2565 18.6152 4.38468C18.7434 4.51287 18.845 4.66507 18.9143 4.83259C18.9836 5.00011 19.0191 5.17965 19.0189 5.36093Z" fill="white"/>
+              </svg>            
+          </a>
+          <a class='navigation__button button-green' href="https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663">Buy Ticket</a>
+        </div>
+      </nav>
     <h1 class='visually-hidden'>Genius Immersive Experience</h1>
     <section class="promo wrapper">
       <div class="promo__logo">
-        <svg width="470" height="297" viewBox="0 0 470 297" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_444:334)">
-            <path d="M284.764 132.068V131.449C284.613 131.651 284.458 131.857 284.294 132.068H284.764Z" fill="white" />
-            <path d="M7.30841 188.788V88.521H16.417V188.788H7.30841Z" fill="white" />
-            <path d="M33.5862 125.069V136.516C36.5425 128.022 42.6948 123.419 51.0984 123.419C59.6195 123.419 65.6684 128.022 68.1406 136.282C71.6891 127.783 77.9636 123.419 86.3625 123.419C97.9621 123.419 104.589 131.561 104.589 145.488V184.081H96.303V146.196C96.303 136.164 92.0448 130.727 83.8762 130.727C74.8851 130.727 69.3062 137.336 69.3062 148.193V184.081H61.1564V145.722C61.1564 136.164 56.6585 130.722 48.8518 130.722C39.856 130.722 34.0562 138.039 34.0562 149.604V185.951H25.8923V125.069H33.5862Z" fill="white" />
-            <path d="M120.922 125.069V136.516C123.878 128.022 130.035 123.419 138.434 123.419C146.955 123.419 153.004 128.022 155.476 136.282C159.024 127.783 165.299 123.419 173.698 123.419C185.297 123.419 191.924 131.561 191.924 145.488V184.081H183.638V146.196C183.638 136.164 179.38 130.727 171.216 130.727C162.22 130.727 156.646 137.336 156.646 148.193V184.081H148.492V145.722C148.492 136.164 143.994 130.722 136.187 130.722C127.191 130.722 121.392 138.04 121.392 149.604V184.081H113.228V125.069H120.922Z" fill="white" />
-            <path d="M250.04 156.701H207.082C207.204 170.037 214.541 178.18 226.018 178.18C234.3 178.18 240.217 173.581 242.703 165.551L249.688 168.387C246.017 179.361 237.378 185.502 225.426 185.502C208.624 185.502 198.801 174.758 198.801 154.929C198.801 135.574 208.741 123.654 225.074 123.654C240.927 123.654 250.04 133.095 250.04 151.034V156.701ZM241.637 148.91C241.637 136.756 235.484 130.263 224.952 130.263C213.949 130.263 207.322 137.815 207.092 149.975H241.646L241.637 148.91Z" fill="white" />
-            <path d="M282.912 123.654C283.664 123.634 284.417 123.674 285.163 123.771V131.796H284.223C278.545 131.796 274.518 133.451 271.561 136.282C266.119 141.71 265.052 149.618 265.052 157.057V184.081H256.878V125.069H264.572V139.47C267.294 130.38 273.798 123.654 282.912 123.654Z" fill="white" />
-            <path d="M283.847 165.791L292.129 164.385C293.67 173.943 299.587 178.663 309.171 178.663C317.809 178.663 322.542 174.885 322.542 168.515C322.542 162.144 319.252 159.191 312.01 158.244L302.544 157.185C291.184 155.779 285.741 149.629 285.741 140.661C285.741 130.156 294.023 123.664 307.516 123.664C320.676 123.664 329.527 130.391 330.711 141.842L322.542 143.492C321.24 135.233 316.037 130.391 307.399 130.391C298.878 130.391 293.905 134.052 293.905 140.305C293.905 145.855 297.336 149.16 305.148 150.102L314.618 151.283C326.096 152.69 330.828 158.601 330.828 167.807C330.828 178.781 322.665 185.512 308.818 185.512C294.855 185.503 285.76 178.654 283.847 165.791Z" fill="white" />
-            <path d="M335.58 106.169H344.928V119.154H335.58V106.169ZM336.172 125.07H344.336V184.082H336.154L336.172 125.07Z" fill="white" />
-            <path d="M347.386 125.07H356.382L371.056 166.851C372.118 170.155 372.936 172.869 373.537 175.588H373.894C374.487 172.869 375.431 170.155 376.498 166.851L391.172 125.07H400.163L378.275 184.082H369.279L347.386 125.07Z" fill="white" />
-            <path d="M448.554 156.701H405.61C405.727 170.037 413.064 178.18 424.542 178.18C432.828 178.18 438.74 173.581 441.227 165.551L448.211 168.387C444.54 179.361 435.901 185.502 423.949 185.502C407.147 185.502 397.324 174.758 397.324 154.929C397.324 135.574 407.264 123.654 423.597 123.654C439.455 123.654 448.563 133.095 448.563 151.034L448.554 156.701ZM440.155 148.91C440.155 136.756 433.998 130.263 423.47 130.263C412.463 130.263 405.836 137.815 405.61 149.975H440.155V148.91Z" fill="white" />
-            <path d="M59.3282 261.975V269.766H1.61688V185.966H52.8469V193.757H10.7302V222.909H50.8494V230.699H10.7302V261.975H59.3282Z" fill="white" />
-            <path d="M73.5692 239.198L53.331 210.754H63.154L74.6361 227.746C76.6477 230.817 77.8274 232.823 78.6593 234.356H78.7768C79.9384 232.073 81.2428 229.866 82.6825 227.746L93.5678 210.754H103.748L83.8669 239.789L105.28 269.766H95.4572L82.2971 250.762C80.9344 248.723 79.7096 246.594 78.6311 244.392H78.5136C77.7992 245.69 76.6336 247.814 74.6079 250.88L61.5889 269.766H51.7941L73.5692 239.198Z" fill="white" />
-            <path d="M108.001 210.754H115.813V223.265C119.361 214.41 126.698 209.338 136.023 209.338C150.593 209.338 160.049 221.727 160.049 240.276C160.049 259.026 149.986 271.214 135.43 271.214C125.847 271.214 118.863 265.786 116.16 258.703V294.638L107.997 297.033L108.001 210.754ZM151.312 240.257C151.312 225.623 144.924 216.655 134.035 216.655C122.914 216.655 116.048 225.862 116.048 238.841V241.438C116.048 254.657 122.675 263.864 133.565 263.864C144.567 263.864 151.312 254.892 151.312 240.257Z" fill="white" />
-            <path d="M207.298 242.385H164.345C164.462 255.722 171.799 263.864 183.277 263.864C191.563 263.864 197.48 259.261 199.962 251.236L206.946 254.048C203.275 265.026 194.636 271.163 182.684 271.163C165.882 271.163 156.059 260.423 156.059 240.595C156.059 221.24 165.999 209.319 182.332 209.319C198.19 209.319 207.298 218.76 207.298 236.699V242.385ZM198.899 234.595C198.899 222.435 192.742 215.948 182.214 215.948C171.207 215.948 164.58 223.499 164.354 235.635H198.909L198.899 234.595Z" fill="white" />
-            <path d="M239.018 209.338H243.277V217.504H240.316C234.638 217.504 230.615 219.154 227.654 221.99C222.211 227.418 221.149 235.326 221.149 242.76V269.789H212.98V210.754H220.674V225.154C223.396 216.065 229.905 209.338 239.018 209.338Z" fill="white" />
-            <path d="M242.684 191.854H252.033V204.847H242.684V191.854ZM243.277 209.338H251.45V269.766H243.277V209.338Z" fill="white" />
-            <path d="M307.77 242.385H264.812C264.93 255.722 272.266 263.864 283.748 263.864C292.03 263.864 297.947 259.261 300.433 251.236L307.413 254.048C303.747 265.026 295.108 271.163 283.156 271.163C266.349 271.163 256.531 260.423 256.531 240.595C256.531 221.24 266.471 209.319 282.799 209.319C298.657 209.319 307.77 218.76 307.77 236.699V242.385ZM299.39 234.595C299.39 222.435 293.238 215.948 282.705 215.948C271.698 215.948 265.071 223.499 264.845 235.635H299.39V234.595Z" fill="white" />
-            <path d="M313.448 210.753H321.259V223.733C324.812 214.058 331.674 209.099 341.497 209.099C354.751 209.099 361.613 217.363 361.613 233.296V269.765H353.332V233.769C353.332 222.318 348.359 216.425 339.011 216.425C328.361 216.425 321.621 224.924 321.621 238.733V269.774H313.448V210.753Z" fill="white" />
-            <path d="M365.989 240.257C365.989 221.038 376.287 209.319 392.854 209.319C406.343 209.319 415.334 217.227 416.758 230.681L408.355 231.618C407.17 221.826 401.493 216.51 392.497 216.51C381.494 216.51 374.745 225.365 374.745 240.117C374.745 255.225 381.494 263.958 392.854 263.958C401.728 263.958 407.288 258.647 408.834 248.85L416.763 250.031C414.629 263.367 405.873 271.158 392.859 271.158C376.404 271.181 365.989 259.261 365.989 240.257Z" fill="white" />
-            <path d="M470 242.385H427.042C427.164 255.722 434.496 263.864 445.978 263.864C454.26 263.864 460.177 259.261 462.663 251.236L469.647 254.048C465.977 265.026 457.338 271.163 445.386 271.163C428.584 271.163 418.761 260.423 418.761 240.595C418.761 221.24 428.701 209.319 445.029 209.319C460.887 209.319 470 218.76 470 236.699V242.385ZM461.596 234.595C461.596 222.435 455.444 215.948 444.911 215.948C433.909 215.948 427.282 223.499 427.051 235.635H461.606L461.596 234.595Z" fill="white" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M209.309 44.037L221.436 40.5898V91.2157C221.433 95.2001 223.233 97.9627 226.836 99.5033V100.052H195.05V99.5033C198.653 97.9595 200.457 95.2064 200.46 91.2438V57.4464C200.46 54.8026 200.056 52.8213 199.247 51.5025C198.439 50.1838 197.04 49.229 195.05 48.6384V48.09L207.955 44.4216C204.144 29.7722 200.272 26.9303 182.543 23.4899C201.24 19.8336 204.525 16.8711 208.581 0.0239258C212.642 16.8711 215.927 19.8336 234.624 23.4899C217.051 26.9 213.093 29.7221 209.309 44.037ZM76.4972 64.3844C74.3186 65.249 72.4787 66.793 71.252 68.786C70.0018 70.9155 69.3719 73.3505 69.4331 75.8174V93.9817C65.8987 96.4818 61.3726 98.4818 55.8548 99.9818C50.4616 101.47 44.8925 102.23 39.2967 102.241C31.2754 102.241 24.3209 100.626 18.4334 97.3943C12.6281 94.2505 7.88563 89.4635 4.8034 83.6363C1.60113 77.6987 0 70.7298 0 62.7297C0 54.3483 1.85807 46.9904 5.5742 40.6559C9.27851 34.3198 14.7685 29.2095 21.3615 25.9603C28.1671 22.5228 36.096 20.804 45.1482 20.804C54.0539 20.7309 62.8307 22.9286 70.6457 27.1885L62.4771 49.431H61.9272C61.4102 41.4309 59.6994 35.5402 56.7948 31.7589C53.8855 27.9807 49.5991 26.34 43.9309 26.34C31.9365 26.34 25.9393 36.3668 25.9393 56.9171C25.8669 64.0932 26.7022 71.2498 28.4256 78.2174C30.08 84.6394 32.3423 89.7035 35.2124 93.4099C38.0825 97.1162 41.2472 98.9693 44.7064 98.9693C45.9597 98.9693 46.8433 98.749 47.3572 98.3084V76.933C47.3572 73.1173 46.6945 70.2548 45.3691 68.3454C44.0437 66.436 41.8363 65.1157 38.7468 64.3844V63.8313H76.4972V64.3844ZM121.533 83.9079C123.671 82.9284 125.502 81.3875 126.829 79.45L127.713 79.6703C126.388 87.3767 123.481 92.9737 118.995 96.4612C114.508 99.9488 109.651 101.691 104.425 101.688C100.089 101.695 95.8341 100.52 92.12 98.2894C88.2566 96.0175 85.1467 92.6596 82.7904 88.2158C80.4342 83.772 79.2576 78.4703 79.2607 72.3108C79.2607 66.217 80.3825 60.7669 82.626 55.9606C84.8694 51.1542 87.9604 47.3932 91.8991 44.6776C95.8001 41.9732 100.45 40.5493 105.2 40.6041C108.859 40.599 112.475 41.3876 115.799 42.915C119.176 44.4588 122.045 47.1557 124.404 51.0058C126.764 54.8559 127.942 60.0122 127.939 66.4748H96.1432C96.9516 72.6405 98.9209 77.3187 102.051 80.5094C105.181 83.7001 109.255 85.297 114.271 85.3001C116.763 85.35 119.237 84.8756 121.533 83.9079ZM97.525 48.362C96.3092 51.1214 95.7014 55.0012 95.7014 60.0013C95.6863 61.0306 95.7239 62.0601 95.8142 63.0857H109.51C109.51 56.1137 108.957 51.2324 107.851 48.4417C106.745 45.651 105.053 44.2572 102.775 44.2604C100.491 44.2447 98.7407 45.612 97.525 48.362ZM193.391 100.052V99.5032C189.797 97.9625 188 95.2125 188 91.253V56.565C187.99 51.5024 186.587 47.5774 183.789 44.7898C180.991 42.0023 177.053 40.6085 171.977 40.6085C168.221 40.6085 165.001 41.471 162.319 43.196C159.605 44.9525 157.563 47.5699 156.524 50.6258V40.5991L130.143 48.0992V48.6477C132.126 49.2383 133.524 50.193 134.335 51.5118C135.147 52.8306 135.553 54.8118 135.553 57.4556V91.253C135.549 95.2156 133.746 97.9688 130.143 99.5125V100.061H159.71V99.5125C159.153 99.2839 158.646 98.9469 158.22 98.5212C157.794 98.0955 157.457 97.5895 157.229 97.0328C156.688 95.5313 156.444 93.9394 156.51 92.3452V52.604C157.107 51.7278 157.917 51.0159 158.863 50.5341C159.809 50.0524 160.862 49.8163 161.924 49.8477C162.643 49.81 163.36 49.9459 164.014 50.2437C164.669 50.5416 165.242 50.9927 165.684 51.5587C166.568 52.7087 167.01 54.3775 167.01 56.565V92.3359C167.076 93.93 166.831 95.5219 166.29 97.0234C166.061 97.5794 165.724 98.0846 165.298 98.5101C164.872 98.9357 164.366 99.2732 163.809 99.5032V100.052H193.391ZM289.534 99.5091C287.974 98.8967 286.577 97.9343 285.45 96.6965C284.569 95.6371 284.129 93.8152 284.129 91.2308V40.605L259.402 44.566V45.1332C260.07 45.3987 260.675 45.8001 261.178 46.3118C261.681 46.8235 262.072 47.4343 262.326 48.1051C262.876 49.4973 263.153 51.5927 263.153 54.3771V88.3948C262.269 89.9355 260.872 90.7058 258.961 90.7058C257.264 90.7058 255.981 90.1714 255.097 89.1073C254.214 88.0386 253.772 86.476 253.772 84.4197V40.605L227.391 44.8988V45.4707C229.374 46.0613 230.77 47.0316 231.578 48.3817C232.387 49.7317 232.791 51.763 232.791 54.4755V84.2182C232.782 90.312 234.145 94.7527 236.88 97.5403C239.615 100.328 243.375 101.722 248.16 101.722C251.901 101.722 255.078 100.628 257.692 98.4403C260.3 96.2787 262.201 93.3896 263.153 90.1433V100.058H289.534V99.5091ZM300.297 99.6112C296.588 98.305 293.132 96.3686 290.084 93.8877L296.711 79.0234L297.374 79.1359C298.656 83.9375 301.232 88.297 304.823 91.7408C308.389 95.1534 312.234 96.8596 316.357 96.8596C319.152 96.8596 321.176 96.2549 322.43 95.0455C323.029 94.4909 323.506 93.8175 323.83 93.0684C324.154 92.3194 324.317 91.5111 324.31 90.6955C324.31 88.1267 323.022 86.2923 320.446 85.1923L303.338 77.2656C296.132 73.8905 292.528 68.4592 292.528 60.9716C292.556 57.6217 293.463 54.3375 295.16 51.4464C296.927 48.3214 299.669 45.7338 303.385 43.6838C307.101 41.6337 311.723 40.6072 317.25 40.604C320.912 40.5991 324.555 41.133 328.06 42.1884C331.516 43.2166 334.765 44.8377 337.662 46.9791L330.819 59.7481L330.156 59.6403C328.167 54.2058 325.61 50.4073 322.486 48.2448C319.362 46.0822 316.143 45.001 312.828 45.001C310.321 45.001 308.48 45.4697 307.305 46.4073C306.747 46.8341 306.297 47.3855 305.99 48.0172C305.684 48.6489 305.531 49.3433 305.543 50.0448C305.561 51.2748 305.966 52.4681 306.699 53.4574C307.602 54.677 308.809 55.6401 310.2 56.2512L326.425 63.7513C333.271 66.9826 336.694 72.1561 336.694 79.2718C336.71 83.0964 335.761 86.8636 333.935 90.2267C332.021 93.6985 329.172 96.5674 325.71 98.5097C322.054 100.65 317.574 101.721 312.273 101.721C308.188 101.72 304.135 101.006 300.297 99.6112Z" fill="url(#paint0_linear_444:334)" />
-          </g>
-          <defs>
-            <linearGradient id="paint0_linear_444:334" x1="27" y1="15" x2="332.5" y2="94" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#82FF80">
-              </stop>
-              <stop offset=".30" stop-color="#82FF80">
-                <animate attributeName="offset" dur="10s" values="1;0;1" repeatCount="indefinite" fill="freeze" />
-              </stop>
-              <stop offset="1" stop-color="#FFC700" />
-            </linearGradient>
-            <clipPath id="clip0_444:334">
-              <rect width="470" height="297" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
+        <img src="../images/logo.svg" alt="Genius Immersive Show" width="459" height="132">
       </div>
-      <p class="promo__description">The Genius Immersive Experience is a creative journey through the eyes of Leonardo Da Vinci <span>today</span>. It’s the next generation of immersive shows and an absolutely new experience.</p>
+      <p class="promo__description">The Genius Immersive Experience is&nbsp;a&nbsp;creative journey through the eyes of&nbsp;Leonardo da&nbsp;Vinci, as&nbsp;if&nbsp;he&nbsp;were alive&nbsp;today. It’s&nbsp;like nothing&nbsp;you’ve experienced ever before</p>
     </section>
-    <nav id='navigation' class="navigation wrapper navigation--sticky">
-      <span class='navigation__logo-wrapper'>
-        <img class="navigation__logo" src="../images/nav-logo.svg" alt="Genius Immersive Show" width="140" height="70">
-      </span>
-      <div class='navigation__list-wrapper'>
-        <ul class="navigation__list">
-          <li><a href="#concept">Concept</a></li>
-          <li><a href="#announcement">Locations</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#partners">Partners</a></li>
-          <li><a href="#faqs">FAQs</a></li>
-        </ul>
-        <a class="navigation__link" href="https://www.instagram.com/bigexperiential/?utm_medium=copy_link">
-          <svg width="101" height="101" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50.2948 24.0645C36.0661 24.0645 24.4825 35.6991 24.4825 50.0059C24.4825 56.9659 27.162 63.491 32.0194 68.3727C36.8768 73.2544 43.3694 75.9473 50.2948 75.9473C64.5235 75.9473 76.1071 64.3126 76.1071 50.0059C76.1071 43.1425 73.407 36.6519 68.4946 31.715C63.5823 26.785 57.1241 24.0645 50.2948 24.0645ZM66.5434 50.0059C66.5434 59.0097 59.2539 66.3427 50.2948 66.3427C41.3358 66.3427 34.0462 59.0097 34.0462 50.0059C34.0462 41.002 41.3358 33.676 50.2948 33.676C59.2539 33.676 66.5434 41.002 66.5434 50.0059Z" fill="white"/>
-            <path d="M76.9312 17.623C73.6334 17.623 70.9539 20.3162 70.9539 23.6309C70.9539 26.9455 73.6334 29.6387 76.9312 29.6387C80.2291 29.6387 82.9086 26.9455 82.9086 23.6309C82.9086 20.3162 80.2291 17.623 76.9312 17.623Z" fill="white"/>
-            <path d="M92.0738 8.42138C86.866 2.98752 79.549 0.115234 70.9197 0.115234H29.6625C12.191 0.115234 0.449341 11.9151 0.449341 29.4733V70.7347C0.449341 79.538 3.37616 87.0294 8.91375 92.3942C14.2521 97.5588 21.4936 100.293 29.8618 100.293H70.7204C79.2123 100.293 86.5225 97.5588 91.8677 92.3942C97.2748 87.1606 100.133 79.7382 100.133 70.9349V29.4733C100.14 20.9945 97.3503 13.7171 92.0738 8.42138ZM85.224 85.5104C81.6513 88.9074 76.6359 90.6957 70.7204 90.6957H29.8618C23.9463 90.6957 18.9309 88.9005 15.3651 85.5104C11.8131 81.9407 10.0062 76.9695 10.0062 70.7347V29.4733C10.0062 23.3766 11.8062 18.4744 15.3651 14.9047C18.6904 11.5629 23.8433 9.71943 29.8618 9.71943H71.1189C77.1855 9.71943 82.0636 11.5284 85.6156 15.0981C89.0714 18.7782 90.9745 23.8806 90.9745 29.4733V70.9349C90.9814 76.9004 88.989 81.9338 85.224 85.5104Z" fill="white"/>
-            </svg>
-        </a>
-        <a class='navigation__button button-green' href="https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663">Buy Ticket</a>
-      </div>
-    </nav>
     <section class="advantages wrapper">
-      <h2 class="advantages__title title">Genius is not yet<br> another show</h2>
+      <h2 class="advantages__title title">Genius is not just<br> another show</h2>
       <div class="advantages__wrapper">
-        <p class="advantages__description">It’s the first full immersive experience in a post-pandemic world!</p>
+        <p class="advantages__description">It’s a completely new, immersive art experience that sets the tone for the next generation of shows</p>
         <div class="advantages__item advantages__item--generation">
           <img src="../images/img-next-generation.svg" width="460" height="320" alt="Next-generation">
-          <p><b>Next-generation.</b> Meet the first show with the visual content ahead of its time as well as Da Vinci
-            was ahead of his. Prepare to see something you could never imagine.</p>
+          <p><b>Next-generation.</b> Just as Leonardo da Vinci was ahead of his time, so too is this show — pushing the boundaries of visual content to astonishing effect. Prepare to discover something truly original.</p>
         </div>
         <div class="advantages__item advantages__item--touch">
           <img src="../images/touch.svg" width="424" height="424" alt="Touchable & Playable">
-          <p><b>Touchable & Playable.</b> Take a step into the mind of the most well-known Genius ever lived. Sense the
-            power of human creativity, strive for invention, and hunger for world cognition.</p>
+          <p><b>Touchable & Playable.</b> What’s it like to be inside one of the brightest minds that ever existed? Interact and feel the power of human creativity, the light — bulb moment of invention and the cognitive workings of a Genius.</p>
         </div>
         <div class="advantages__item advantages__item--edutainment">
-          <img src="../images/mona-lisa.svg" width="318" height="552" alt="Edutainment">
-          <p><b>Edutainment.</b> Revise the inventions and ideas of Leonardo Da Vinci from today’s perspective. Find new
-            meanings of the past, rediscover your own talents and endeavors, and take a glimpse into the future.</p>
+          <img src="../images/mona-lisa.svg" width="312" height="516" alt="Edutainment">
+          <p><b>Edutainment.</b> Revisit Leonardo’s inventions and ideas within a modern framework. Find new meanings in them, reflect on your own talents and endeavours, and take a glimpse into the future.</p>
         </div>
         <div class="advantages__item advantages__item--play">
           <div class="advantages__picture-wrapper">
@@ -139,8 +99,7 @@
             <source src="/mp3/city-interlude.mp3" type="audio/mp3">
             Ваш браузер не поддерживает элемент <code>audio</code>.
           </audio>
-          <p><b>Music Experience.</b> Take a chance to slow down, focus on the now, and hear your thoughts. The
-            enigmatic theme that accompanies the show will give you shivers and bewitch you at the same time.</p>
+          <p><b>Music Experience.</b> Take a moment to slow down, focus on the now and tune into your thoughts. Give yourself up to the frisson-inducing musical score and interactive visuals that accompany the show, within a 360-degree soundscape.</p>
         </div>
       </div>
     </section>
@@ -153,20 +112,20 @@
           </div>
         </div>
         <div class="concept__description concept__description--emergence wrapper">
-          <p>Later the genius was born. He explored the world around him through science, art, and intuition that was telling him that human kind was not designed to mark time but also to invent, create and aspire to achieve knowledge.</p>
+          <p>The Genius: Leonardo explored the world around him through science, art and intuition. Humankind was not created just to mark time, he realised, but also to invent, create and aspire to achieve knowledge.</p>
           <div class="concept__picture concept__picture--vitruvian"></div>
           <div class="concept__picture concept__picture--cube-west"></div>
         </div>
         <p class="concept__quote">«There are three classes of people: those who see, those who see when they are shown, those who do not see», — Leonado Da Vinci</p>
         <div class="concept__description ">
-          <p>At the show you will see what Leonardo da Vinci's vision could be transformed into if he were our contemporary. How he would reconsider our attitude to ecology, nature, and power of science, how he would show people new ways and ideas they may have never thought about.</p>
+          <p>Almost 80 million real pixels, 4 km of cabling and more than 350,000 projected lumens come together to create a sensory riot. In this revision of Leonardo’s work, the Genius Immersive Experience presents what his vision might have been today. How would he perceive our attitudes towards ecology, nature, science, space exploration and modern art? Discover the answers to our future by examining our past.</p>
           <div class="concept__picture concept__picture--people"></div>
         </div>
         <div class="concept__description">
           <p>This is an absolute revision of Da Vinci's work, minding modern realities: ecology problems, the discovery of outer space, new meanings and trends in modern art, and the seach for the human kind’s mission in this world.</p>
           <div class="concept__picture concept__picture--inventor"></div>
         </div>
-        <p class="concept__quote">«Blinding ignorance does mislead us. O! Wretched mortals, open your eyes!», — Leonado Da Vinci</p>
+        <p class="concept__quote">«All our knowledge has its origins in our perceptions», — Leonado Da Vinci</p>
       </div>
     </section>
     <section class="announcement" id="announcement">
@@ -240,48 +199,6 @@
           <p>Our mission is to help people revise the heritage and influence of great minds, events, and inventions to humanity.</p>
           <p>We believe that revision of the past can provide answers to the questions and challenges humanity is dealing with right now. By bringing together people of different countries, races, ages, genders and backgrounds we aspire to unite and to give another chance to rediscover ourselves.</p>
         </div>
-        <ul class="team__list">
-          <li class="team__crewman">
-            <img src="../images/jeffrey-jah.jpg" width="470" height="470" alt="Jeffrey Jah Founder & CEO" loading="lazy" />
-            <div class="team__crewman-description">
-              <p><b>Jeffrey Jah</b></p>
-              <p>Founder & CEO</p>
-              <p>Event producer and hospitality operator for over 30 years. Owned and operated several restaurants, clubs and bars in NYC and abroad</p>
-            </div>
-          </li>
-          <li class="team__crewman">
-            <img src="../images/julia-hacker.jpg" width="365" height="365" alt="Julia Hacker Co-founder and director" loading="lazy" />
-            <div class="team__crewman-description">
-              <p><b>Julia Hacker</b></p>
-              <p>Co-founder and director</p>
-              <p>Toronto-based multi-disciplinary artist whose creations and artwork is known worldwide, Associate Member of the Canadian Society of Artists.</p>
-            </div>
-          </li>
-          <li class="team__crewman">
-            <img src="../images/bert-van-der-ryd.jpg" width="366" height="366" alt="bert-van-der-ryd Co-founder and COO" loading="lazy" />
-            <div class="team__crewman-description">
-              <p><b>Bert van der Ryd </b></p>
-              <p>Co-founder and COO</p>
-              <p>Founder and director of a media, marketing & event production company for over 20 years. Former senior vice president of live sports promotion “Glory Kickboxing”.</p>
-            </div>
-          </li>
-          <li class="team__crewman">
-            <img src="../images/scott-rudmann.jpg" width="270" height="270" alt="scott-rudmann Co-founder" loading="lazy" />
-            <div class="team__crewman-description">
-              <p><b>Scott Rudmann</b></p>
-              <p>Co-founder</p>
-              <p>Founder of Nectar Capital, an asset management company. Over 25 years of experience in media and entertainment venture capital.</p>
-            </div>
-          </li>
-          <li class="team__crewman">
-            <img src="../images/alfonso-losco.jpg" width="270" height="270" alt="alfonso-losco Technical director" loading="lazy" />
-            <div class="team__crewman-description">
-              <p><b>Alfonso Losco</b></p>
-              <p>Technical director</p>
-              <p>Creative director & visual artist business consultant with 25 year of experience in multimedia and visual stage design.</p>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
     <section class="partners" id="partners">
