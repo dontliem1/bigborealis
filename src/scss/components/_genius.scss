@@ -84,6 +84,7 @@
   left: 0;
   right: 0;
   bottom: .5em;
+  z-index: 1;
 }
 .header__wrapper {
   background: rgba(255, 255, 255, .1);
@@ -108,10 +109,12 @@
   border-top-left-radius: 1.6rem;
   border-bottom-left-radius: 1.6rem;
   transition: color .2s;
+  color: inherit;
 }
 .header__instagram:hover,
 .navigation__btn:hover,
 .faqs__summary:hover,
+.faqs__summary:focus,
 .link--solid:hover {
   color: #82ff80;
 }
@@ -128,6 +131,8 @@
   display: none;
   flex-direction: column;
   font-size: 2rem;
+  max-height: 70vh;
+  overflow-y: auto;
 }
 .navigation__btn[aria-expanded="true"] ~ .navigation__list {
   display: flex;
@@ -363,8 +368,9 @@
 .concept__img_cosmos {
   margin-top: 4rem;
   margin-bottom: 4rem;
-  background: url("../images/concept/cosmos.jpg") center /cover no-repeat fixed;
+  background: url("../images/concept/cosmos.jpg") center /contain no-repeat fixed;
   padding-bottom: 15.25em;
+  -webkit-background-size: auto 100vh;
 }
 .concept__grid {
   display: grid;
@@ -621,8 +627,6 @@
   border-right: 1.2em solid transparent;
   padding: 1em 1.2em;
   transition: color .2s;
-}
-.faqs__summary:focus:not(:focus-visible) {
   outline: none;
 }
 ::-webkit-details-marker {
