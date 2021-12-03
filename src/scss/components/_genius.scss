@@ -368,9 +368,13 @@
 .concept__img_cosmos {
   margin-top: 4rem;
   margin-bottom: 4rem;
-  background: url("../images/concept/cosmos.jpg") center /contain no-repeat fixed;
+  background: url("../images/concept/cosmos.jpg") center /cover no-repeat;
   padding-bottom: 15.25em;
-  -webkit-background-size: auto 100vh;
+}
+@media (min-width: 48em) {
+  .concept__img_cosmos {
+    background-attachment: fixed;
+  }
 }
 .concept__grid {
   display: grid;
