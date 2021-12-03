@@ -21,6 +21,7 @@ module.exports = function(config) {
 
   // Layout aliases
   config.addLayoutAlias('home', 'layouts/home.njk');
+  config.addLayoutAlias('genius', 'layouts/genius.njk');
 
   // Transforms
   config.addTransform('htmlmin', htmlMinTransform);
@@ -29,6 +30,7 @@ module.exports = function(config) {
   // Passthrough copy
   config.addPassthroughCopy('src/fonts');
   config.addPassthroughCopy('src/images');
+  config.addPassthroughCopy('src/media');
   config.addPassthroughCopy('src/js');
   config.addPassthroughCopy('src/admin/config.yml');
   config.addPassthroughCopy('src/admin/previews.js');

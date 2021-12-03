@@ -9,25 +9,30 @@ html {
   font-size: 62.5%;
   background-color: #000;
   min-height: 100%;
-  display: flex;
   color: #fff;
 }
 
 body {
   scroll-behavior: smooth;
+  margin: 0;
+}
+.project {
+  font-size: 1.6em;
+  line-height: 1.6;
+}
+.frame {
   font-size: 1.2em;
   display: flex;
   flex-direction: column;
   line-height: 1.2;
-  margin: 0;
   flex-grow: 1;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100%;
+  min-height: 100vh;
 }
 @media (orientation: portrait) {
-  body {
+  .frame {
     background-position: 65% 50%;
   }
 }
@@ -40,12 +45,17 @@ main {
   grid-row: span 2;
 }
 @media (min-width: 48em) {
-  body {
+  .project, .frame {
+    font-size: 2em;
+  }
+}
+@media (min-width: 64em) {
+  .project {
     font-size: 2em;
   }
 }
 @media (min-width: 70em) {
-  body {
+  .frame, .project {
     font-size: 2.4em;
   }
 }
@@ -53,6 +63,10 @@ main {
   html {
     font-size: 93.75%;
   }
+}
+
+svg, img {
+  vertical-align: middle;
 }
 
 /**
