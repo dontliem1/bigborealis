@@ -1,4 +1,313 @@
 ---
 label: Genius
 hide_body: true
-fields: []
+fields:
+- name: logo
+  type: file
+  config:
+    maxSize: 1
+  label: Logo
+  description: The title logo
+- name: mini_logo
+  type: file
+  config:
+    maxSize: 64
+  label: Mini logo
+  description: The symbol for navigation and footer
+- name: hero_image
+  type: file
+  config:
+    maxSize: 2
+  label: Hero image
+  description: The main big image of the page
+- name: description
+  type: textarea
+  default: The Genius Immersive Experience is a creative journey through the eyes
+    of Leonardo da Vinci, as if he were alive today. It’s like nothing you’ve experienced
+    ever before
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: The first text under the main image section
+- name: features
+  type: field_group
+  config: {}
+  fields:
+  - name: features_title
+    type: text
+    config:
+      required: false
+    label: Features title
+    description: The title of the section about show's features
+    default: Genius is not another show
+  - name: introduction
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Introduction
+    description: The introduction to features
+  - name: next_generation
+    type: textarea
+    default: "**Next-generation.** Just as Leonardo da Vinci was ahead of his time,
+      so too is this show — pushing the boundaries of visual content to astonishing
+      effect. Prepare to discover something truly original."
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Next generation
+    description: Text block with frames rectangle
+  - name: touch
+    type: textarea
+    default: "**Touchable & Playable.** What’s it like to be inside one of the brightest
+      minds that ever existed? Interact and feel the power of human creativity, the
+      light — bulb moment of invention and the cognitive workings of a Genius."
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Touch
+    description: Text block with touch icon
+  - name: edutainment
+    type: textarea
+    default: "**Edutainment.** Revisit Leonardo’s inventions and ideas within a modern
+      framework. Find new meanings in them, reflect on your own talents and endeavours,
+      and take a glimpse into the future."
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Edutainment
+    description: Text block with Mona Lisa
+  - name: music
+    type: textarea
+    default: "**Music Experience.** Take a moment to slow down, focus on the now and
+      tune into your thoughts. Give yourself up to the frisson-inducing musical score
+      and interactive visuals that accompany the show, within a 360-degree soundscape."
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Music
+    description: Text block about music
+  label: Features
+  description: Block about features
+- name: concept
+  type: field_group
+  config: {}
+  fields:
+  - name: concept_title
+    type: text
+    config:
+      required: false
+    label: Concept title
+    default: Concept
+  - name: concept_start
+    type: textarea
+    default: The big bang spawned the planets and the universe – but why was it all
+      created if there was nobody to discover it, to feel it, to experience it? There
+      was one piece of the puzzle missing…
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Concept start
+  - name: concept_explosion
+    type: file
+    config:
+      maxSize: 2
+    label: Concept explosion
+    description: The first image in concept
+  - name: genius_text
+    type: textarea
+    default: 'The Genius: Leonardo explored the world around him through science,
+      art and intuition. Humankind was not created just to mark time, he realised,
+      but also to invent, create and aspire to achieve knowledge.'
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Genius text
+    description: The text between images
+  - name: vitruvian
+    type: file
+    config:
+      maxSize: 1
+    label: Vitruvian
+    description: The image under the text about genius
+  - name: portrait
+    type: file
+    config:
+      maxSize: 1
+    label: Portrait
+  - name: quote_1
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Quote 1
+  - name: space
+    type: file
+    config:
+      maxSize: 2
+    label: Space
+  - name: concept_story
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Concept story
+    description: The concept final
+  - name: concept_visuals
+    type: file
+    config:
+      maxSize: 2
+    label: Concept visuals
+    description: The final image of the concept
+  - name: quote_2
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Quote 2
+  label: Concept
+  description: Concept of the show
+- name: locations
+  type: field_group_list
+  fields:
+  - name: date
+    type: datetime
+    label: Date
+    description: ''
+    config:
+      required: false
+      date_format: MMM, YYYY
+      time_format: 
+      display_utc: false
+  - name: map
+    type: file
+    config:
+      maxSize: 1
+    label: Map
+  - name: city
+    type: text
+    config:
+      required: false
+    label: City
+    default: Berlin, Germany
+  - name: address
+    type: text
+    config:
+      required: false
+    label: Address
+    default: Wriezener Karree 15
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Locations
+- name: team_image
+  type: file
+  config:
+    maxSize: 2
+  label: Team image
+- name: team_text
+  type: textarea
+  default: |-
+    The Genius Immersive Experience is produced by Borealis Interactive Group (BIG), trailblazing the next generation of immersive shows.
+
+    BIG creates an entirely new experience in the experience industry and strives to take the viewer to the highest level of emotion possible. Through spectacular large-scale story-telling using cutting-edge technologies, all executed by the best design teams, it achieves something never witnessed before.
+
+    BIG’s mission? To encourage people to look back at the heritage and influence of great minds, events and inventions, and reconsider their ongoing effect. The group believes that revisions of the past can provide answers to the questions and challenges humanity is dealing with right now. By bringing together people from different countries, cultures, ages, genders and backgrounds, BIG aspires to unite and allow for the rediscovery of ourselves.
+
+    **Jeffrey Hacke** Founder & CEO
+
+    **Bert van der Ryd** Co Founder & COO
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Team text
+- name: partners_text
+  type: textarea
+  default: |-
+    Flora&faunavisions is the concept and multimedia creator for the Genius Immersive Experience. For more than 20 years, this internationally award-winning design studio has been bringing immersive and interactive experiences to life — from exhibitions and live music shows to fashion events and stage productions.
+
+    Recently acclaimed works include stage and festival designs for the electronic artists Solomun and Paul Kalkbrenner, and curating and designing the interactive exhibition Olympus Perspective Playground, which travelled to more than 10 countries. The studio also designed the spatial musical production Dragon Spring Phoenix Rise, which showed in New York City then China, and is currently designing Wagner’s The Ring Cycle for Opera Australia, to be premiered in 2023.
+
+    Flora&faunavisions is an innovative creator of emotional moments, made up of an ecosystem of design professionals who specialise in the art of creating inspired content across industries and beyond expectations.
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Partners text
+- name: partners
+  type: field_group_list
+  fields:
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  - name: logo
+    type: file
+    config:
+      maxSize: 1
+    label: Logo
+  - name: area
+    type: text
+    config:
+      required: false
+    label: Area
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Partners
+- name: faq
+  type: field_group_list
+  fields:
+  - name: question
+    type: text
+    config:
+      required: false
+    label: Question
+  - name: answer
+    type: text
+    config:
+      required: false
+    label: Answer
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: FAQ
