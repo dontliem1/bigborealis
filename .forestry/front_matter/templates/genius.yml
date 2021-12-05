@@ -1,0 +1,25 @@
+---
+label: Genius
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: metaDesc
+  label: metaDesc
+- type: file
+  name: logo
+  label: logo
+- type: file
+  name: background
+  label: background
+- type: text
+  name: backgroundVideo
+  label: backgroundVideo
+- type: datetime
+  name: startDate
+  label: startDate
