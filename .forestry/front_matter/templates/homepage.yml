@@ -16,7 +16,7 @@ fields:
   label: Start of the show
   config:
     date_format: DD.MM.YYYY
-    time_format:
+    time_format: 
     display_utc: false
     export_format: YYYY-MM-DD
 - name: background
@@ -25,4 +25,4 @@ fields:
 - name: backgroundVideo
   type: file
   label: Background video
-  description: .webm video for background
+  description: ".webm video for background"
