@@ -11,6 +11,11 @@ sections:
   label: Coming soon page
   templates:
   - homepage
+- type: document
+  path: src/genius.md
+  label: Genius Immersive Experience
+  templates:
+  - genius
 - type: directory
   path: src/posts
   label: Posts
