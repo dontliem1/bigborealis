@@ -33,9 +33,9 @@ concept:
     all created if there was nobody to discover it, to feel it, to experience it?
     There was one piece of the puzzle missing…
   concept_explosion: "/concept/glow@1x.jpg"
-  vitruvian: "/concept/vitruvian-man@1x.jpg"
-  portrait: "/concept/davinci.jpg"
-  space: "/concept/cosmos.jpg"
+  vitruvian: "/upload/vitruvian-man-1x.png"
+  portrait: "/upload/monalisa.png"
+  space: "/upload/cosmos.png"
   concept_visuals: "/concept/disco.jpg"
   genius_text: 'The Genius: Leonardo explored the world around him through science,
     art and intuition. Humankind was not created just to mark time, he realised, but
