@@ -92,6 +92,7 @@
   backdrop-filter: blur(20px);
   border-radius: 1.6rem;
   display: flex;
+  justify-content: center;
 }
 .header__logo {
   flex-basis: 3em;
@@ -164,6 +165,7 @@
   padding: 1.2rem;
   align-self: center;
   transition: color .2s;
+  line-height: 1;
 }
 .header__instagram svg {
   width: 2.4rem;
@@ -497,7 +499,7 @@
 }
 @media (min-width: 48em) {
   .location__grid {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto auto;
   }
   .location__item {
     display: block;
@@ -510,6 +512,8 @@
     background-repeat: no-repeat;
     background-position: 85% 100%;
     background-size: 12em auto;
+    grid-column: span 2;
+    padding-bottom: 8em;
   }
 }
 
@@ -640,7 +644,7 @@
   background-image: url("../images/arrow_up.svg");
 }
 .faqs__answer {
-  padding: 1em 1.2em;
+  padding: 0 1.2em 1em;
 }
 
 

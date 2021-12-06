@@ -63,21 +63,21 @@ module.exports = function(config) {
     ].reverse();
   });
 
-  config.addCollection('postFeed', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)]
-      .reverse()
-      .slice(0, site.maxPostsPerPage);
-  });
+  // config.addCollection('postFeed', collection => {
+  //   return [...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)]
+  //     .reverse()
+  //     .slice(0, site.maxPostsPerPage);
+  // });
 
   // Plugins
   config.addPlugin(syntaxHighlight);
   
-  /* Forestry instant previews 
-  if( process.env.ELEVENTY_ENV == "staging" ) {
+  /* Forestry instant previews */
+  if( process.env.ELEVENTY_ENV === "staging" ) {
     eleventyConfig.setBrowserSyncConfig({
       host: "0.0.0.0"
     });
-  }*/
+  }
 
   // 404
   config.setBrowserSyncConfig({

@@ -1,15 +1,13 @@
 ---
 layout: genius
 title: Genius Immersive Experience
-metaDesc: Creative journey through the eyes of Leonardo Da Vinci. The next-generation
-  immersive show and an absolutely new experience.
-instagram: https://www.instagram.com/bigexperiential/
-tickets: https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663
-hero: The Genius Immersive Experience is a creative journey through the eyes of Leonardo
-  da Vinci, as if he were alive today. It’s like nothing you’ve experienced ever before
-description: The Genius Immersive Experience is a creative journey through the eyes
-  of Leonardo da Vinci, as if he were alive today. It’s like nothing you’ve experienced
-  ever before
+metaDesc: Creative journey through the eyes of Leonardo Da Vinci. The next-generation immersive show and an absolutely new experience.
+logo: "/logo.svg"
+mini_logo: "/mini-logo.svg"
+hero_image: "/hero.jpg"
+instagram: 'https://www.instagram.com/bigexperiential/'
+tickets: 'https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663'
+hero: The Genius Immersive Experience is a creative journey through the eyes of Leonardo da Vinci, as if he were alive today. It’s like nothing you’ve experienced ever before
 features:
   features_title: Genius is not just another show
   introduction: It’s a completely new, immersive art experience that sets the tone
@@ -28,9 +26,12 @@ features:
     interactive visuals that accompany the show, within a 360-degree soundscape."
 concept:
   concept_title: Concept
-  concept_start: The big bang spawned the planets and the universe – but why was it
-    all created if there was nobody to discover it, to feel it, to experience it?
-    There was one piece of the puzzle missing…
+  concept_start: The big bang spawned the planets and the universe – but why was it all created if there was nobody to discover it, to feel it, to experience it? There was one piece of the puzzle missing…
+  concept_explosion: "/concept/glow@1x.jpg"
+  vitruvian: "/concept/vitruvian-man@1x.jpg"
+  portrait: "/concept/davinci.jpg"
+  space: "/concept/cosmos.jpg"
+  concept_visuals: "/concept/disco.jpg"
   genius_text: 'The Genius: Leonardo explored the world around him through science,
     art and intuition. Humankind was not created just to mark time, he realised, but
     also to invent, create and aspire to achieve knowledge.'
@@ -44,10 +45,12 @@ concept:
     past.
   quote_2: "«All our knowledge has its origins in our perceptions», — Leonado Da Vinci"
 locations:
-- map: "/upload/berlin.svg"
+- date: Dec, 2021
+  map: "/upload/berlin.svg"
   city: Berlin, Germany
   address: Wriezener Karree 15
-  link: https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663
+  link: "https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663"
+team_image: "/borealis.jpg"
 team_text: |-
   The Genius Immersive Experience is produced by Borealis Interactive Group (BIG), trailblazing the next generation of immersive shows.
 
@@ -64,20 +67,7 @@ partners_text: |-
   Recently acclaimed works include stage and festival designs for the electronic artists Solomun and Paul Kalkbrenner, and curating and designing the interactive exhibition Olympus Perspective Playground, which travelled to more than 10 countries. The studio also designed the spatial musical production Dragon Spring Phoenix Rise, which showed in New York City then China, and is currently designing Wagner’s The Ring Cycle for Opera Australia, to be premiered in 2023.
 
   Flora&faunavisions is an innovative creator of emotional moments, made up of an ecosystem of design professionals who specialise in the art of creating inspired content across industries and beyond expectations.
-faq:
+faqs:
 - question: Is it COVID-Free?
   answer: Yes, it is.
-partners:
-- link: https://www.florafaunavisions.de/
-  area: Concept & Multimedia Creation
-
 ---
-The Genius Immersive Experience is produced by Borealis Interactive Group (BIG), trailblazing the next generation of immersive shows.
-
-BIG creates an entirely new experience in the experience industry and strives to take the viewer to the highest level of emotion possible. Through spectacular large-scale story-telling using cutting-edge technologies, all executed by the best design teams, it achieves something never witnessed before.
-
-BIG’s mission? To encourage people to look back at the heritage and influence of great minds, events and inventions, and reconsider their ongoing effect. The group believes that revisions of the past can provide answers to the questions and challenges humanity is dealing with right now. By bringing together people from different countries, cultures, ages, genders and backgrounds, BIG aspires to unite and allow for the rediscovery of ourselves.
-
-**Jeffrey Hacke** Founder & CEO
-
-**Bert van der Ryd** Co Founder & COO

@@ -270,30 +270,7 @@ fields:
     schema:
       format: markdown
   label: Partners text
-- name: partners
-  type: field_group_list
-  fields:
-  - name: link
-    type: text
-    config:
-      required: false
-    label: Link
-  - name: logo
-    type: file
-    config:
-      maxSize: 1
-    label: Logo
-  - name: area
-    type: text
-    config:
-      required: false
-    label: Area
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Partners
-- name: faq
+- name: faqs
   type: field_group_list
   fields:
   - name: question
@@ -310,4 +287,4 @@ fields:
     min: 
     max: 
     labelField: 
-  label: FAQ
+  label: FAQs

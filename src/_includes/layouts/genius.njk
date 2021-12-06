@@ -4,7 +4,7 @@
     <header class="header container">
         <div class="header__wrapper">
             <button class="navigation__btn" id="navBtn" type="button" aria-label="Menu" aria-expanded="false" hidden onclick="this.setAttribute('aria-expanded', (this.getAttribute('aria-expanded') === 'false').toString());"></button>
-            <img class="header__logo" src="/images/mini-logo.svg" alt="Genius logo" width="48" height="44">
+            {% if (mini_logo) %}<img class="header__logo" src="/images{{ mini_logo }}" alt="Genius logo" width="48" height="44">{% endif %}
             <nav class="navigation__list">
                 <a class="navigation__link" href="#concept">Concept</a>
                 <a class="navigation__link" href="#location">Locations</a>
@@ -30,25 +30,25 @@
             <a class="btn" href="{{ tickets }}" target="_blank">Buy Ticket</a>
         </div>
     </header>
-    <div class="hero">
-        <img class="hero__logo" src="/images/logo.svg" alt="Genius Immersive Experience" width="180" height="53">
+    <div class="hero" style="background-image: linear-gradient(rgba(0,0,0,0) 70%, #000 100%), url('/images{{ hero_image }}');">
+        {% if (logo) %}<img class="hero__logo" src="/images{{ logo }}" alt="Genius Immersive Experience" width="180" height="53">{% endif %}
     </div>
     <h1 class="genius__title container">{{ hero }}</h1>
     <section class="project__section container">
-        <h2 class="heading--gradient">Genius is not just another show</h2>
+        <h2 class="heading--gradient">{{ features.features_title }}</h2>
         <div class="features">
-            <p class="features__lead">It’s a completely new, immersive art experience that sets the tone for the next generation of shows</p>
+            <p class="features__lead">{{ features.introduction }}</p>
             <div class="feature_generation">
-                <img class="feature_generation__img" src="/images/features/img-next-generation.svg" width="200" height="140" alt="" loading="lazy">
-                <p><b>Next-generation.</b> Just as Leonardo da Vinci was ahead of his time, so too is this show — pushing the boundaries of visual content to astonishing effect. Prepare to discover something truly original.</p>
+                <img class="feature_generation__img" src="/images/features/generation.svg" width="200" height="140" alt="" loading="lazy">
+                {{ features.next_generation | markdownFilter | safe }}
             </div>
             <div class="feature_touch">
                 <img class="feature_touch__img" src="/images/features/touch.svg" width="200" height="200" alt="" loading="lazy">
-                <p><b>Touchable & Playable.</b> What’s it like to be inside one of the brightest minds that ever existed? Interact and feel the power of human creativity, the light — bulb moment of invention and the cognitive workings of a Genius.</p>
+                {{ features.touch | markdownFilter | safe }}
             </div>
             <div class="feature_edutainment">
                 <img class="feature_edutainment__img" src="/images/features/mona-lisa.svg" width="140" height="240" alt="" loading="lazy">
-                <p><b>Edutainment.</b> Revisit Leonardo’s inventions and ideas within a modern framework. Find new meanings in them, reflect on your own talents and endeavours, and take a glimpse into the future.</p>
+                {{ features.edutainment | markdownFilter | safe }}
             </div>
             <div class="feature_play">
                 <div class="feature_play__wrapper">
@@ -58,54 +58,44 @@
                     </audio>
                     <button onclick="const music = getElementById('music'); if (music.paused) {music.play(); this.classList.add('feature_play__btn--playing'); this.innerText='Pause soundtrack'} else {music.pause(); this.classList.remove('feature_play__btn--playing'); this.innerText='Play soundtrack'}" class="feature_play__btn " type="button">Play soundtrack</button>
                 </div>
-                <p><b>Music Experience.</b> Take a moment to slow down, focus on the now and tune into your thoughts. Give yourself up to the frisson-inducing musical score and interactive visuals that accompany the show, within a 360-degree soundscape.</p>
+                {{ features.music | markdownFilter | safe }}
             </div>
         </div>
     </section>
     <section class="project__section" id="concept">
-        <h2 class="heading--gradient container">Concept</h2>
+        <h2 class="heading--gradient container">{{ concept.concept_title }}</h2>
         <div class="container">
-            <p class="text--maxw">The big bang spawned the planets and the universe – but why was it all created if there was nobody to discover it, to feel it, to experience it? There was one piece of the puzzle missing…</p>
+            <p class="text--maxw">{{ concept.concept_start }}</p>
         </div>
-        <img class='concept__img_glow img--fluid' src='/images/concept/glow@1x.jpg' width='320' height='300' alt='Big bang' loading="lazy">
+        <img class='concept__img_glow img--fluid' src='/images{{ concept.concept_explosion }}' width='320' height='300' alt='Big bang' loading="lazy">
         <div class="concept__grid container">
-            <p class="concept__lead">The Genius: Leonardo explored the world around him through science, art and intuition. Humankind was not created just to mark time, he realised, but also to invent, create and aspire to achieve knowledge.</p>
-            <img class='concept__img_davinci' src='/images/concept/davinci.jpg' width='220' height='274' alt='Da Vinci' loading="lazy">
-            <img class='concept__img_vitruvian' src='/images/concept/vitruvian-man@1x.jpg' width='220' height='189' alt='Vitruvian man' loading="lazy">
+            <p class="concept__lead">{{ concept.genius_text }}</p>
+            <img class='concept__img_davinci' src='/images{{ concept.portrait }}' width='220' height='274' alt='Da Vinci' loading="lazy">
+            <img class='concept__img_vitruvian' src='/images{{ concept.vitruvian }}' width='220' height='189' alt='Vitruvian man' loading="lazy">
         </div>
-        <p class="concept__quote container">«There are three classes of people: those who see, those who see when they are shown, those who do not see», — Leonado Da Vinci</p>
-        <div class='concept__img_cosmos'></div>
+        <p class="concept__quote container">{{ concept.quote_1 }}</p>
+        <div class='concept__img_cosmos' style="background-image:url('/images{{ concept.space }}');"></div>
         <div class="container">
-            <p class="text--maxw">Almost 80 million real pixels, 4 km of cabling and more than 350,000 projected lumens come together to create a sensory riot. In this revision of Leonardo’s work, the Genius Immersive Experience presents what his vision might have been today. How would he perceive our attitudes towards ecology, nature, science, space exploration and modern art? Discover the answers to our future by examining our past.</p>
+            <p class="text--maxw">{{ concept.concept_story }}</p>
         </div>
-        <img class='img--fluid concept__img_disco' src='/images/concept/disco.jpg' width='320' height='759' alt='People' loading="lazy">
-        <p class="concept__quote container">«All our knowledge has its origins in our perceptions», — Leonado Da Vinci</p>
+        <img class='img--fluid concept__img_disco' src='/images{{ concept.concept_visuals }}' width='320' height='759' alt='People' loading="lazy">
+        <p class="concept__quote container">{{ concept.quote_2 }}</p>
     </section>
 
     <section class="project__section container" id="location">
         <h2 class="heading--gradient">Location</h2>
         <div class='location__grid'>
+            {% for location in locations %}
             <div class='location__item'>
-                <p class="location__heading">Dec, 2021</p>
-                <svg class="location__map" width="204" height="166" viewBox="0 0 253 208" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M63.2614 162.416L65.6477 172.317L76.3864 174.693L81.1591 164.396L89.5114 174.693L99.4545 167.96L109.795 179.049H117.352L118.148 187.762H129.682L131.273 179.842L126.5 164.396L144 156.871L150.364 172.317L163.886 167.96L171.045 169.545V177.069H181.784L191.33 170.733L197.295 182.218L204.057 178.653L211.216 182.218L210.023 190.139L211.216 198.851L217.58 204L221.955 186.574H229.114L233.091 178.653L229.114 174.693L235.477 167.96L245.023 162.416L241.841 154.099L249 135.485L229.114 130.337L211.216 118.851L197.295 120.436L211.216 90.3366L204.057 81.2277L184.568 78.0594L169.057 56.6733L150.761 48.7525L159.511 24.5941L138.432 4L128.886 10.3366L138.432 18.2574L121.727 30.1386L110.591 21.8218L103.83 34.4951L92.2955 39.6436L78.7727 38.4554V17.4653H68.0341L69.625 28.9505L60.0795 30.1386L63.2614 39.6436L47.75 38.4554L40.9886 52.7129L47.75 62.2178L44.1705 66.9703L27.4659 56.2772L13.1477 65.7822L14.3409 70.1386L24.2841 66.9703L21.8977 85.9802L15.5341 85.1881L11.1591 107.762L21.1023 106.574L31.8409 112.515L14.3409 133.109L11.1591 146.97L19.1136 153.307L4 165.188L5.59091 172.317L11.1591 170.337L19.1136 179.842L31.8409 174.693L54.1136 163.604L63.2614 162.416Z" stroke="url(#paint0_linear_444:567)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-                    <defs>
-                        <linearGradient id="paint0_linear_444:567" x1="4" y1="4" x2="113.352" y2="13.563" gradientUnits="userSpaceOnUse">
-                            <stop offset="20%" stop-color="#80FF98">
-                                <animate attributeName="stop-color" values="#80FF98; #FFC700; #80FF98" dur="5s" repeatCount="indefinite" />
-                            </stop>
-                            <stop offset="100%" stop-color="#FFC700">
-                                <animate attributeName="stop-color" values="#FFC700; #80FF98; #FFC700;" dur="5s" repeatCount="indefinite" />
-                            </stop>
-                        </linearGradient>
-                    </defs>
-                </svg>
+                <p class="location__heading">{{ location.date }}</p>
+                {% if location.map %}<img class="location__map" src="/images{{ location.map }}" width="204" height="166" alt="">{% endif %}
                 <div>
-                    <b class="location__city">Berlin, Germany</b>
-                    <p class="location__address">Wriezener Karree 15</p>
-                    <a class="btn" href="{{ tickets }}">Buy Ticket</a>
+                    <b class="location__city">{{ location.city }}</b>
+                    <p class="location__address">{{ location.address }}</p>
+                    <a class="btn" href="{{ location.link }}">Buy Ticket</a>
                 </div>
             </div>
+            {% endfor %}
             <div class="location__item location__item--form">
                 <h3 class='location__heading'>Subscribe</h3>
                 <p class="location__lead">More locations to come soon</p>
@@ -121,17 +111,13 @@
 
     <section class="project__section team" id="team">
         <h2 class="heading--gradient container">Team</h2>
-        <img class="img--fluid team__img" src="/images/borealis.jpg" width="320" height="229" alt="Borealis" loading="lazy">
-        <div class="container"><div class="text--maxw">{{ content | safe }}</div></div>
+        {% if location.map %}<img class="img--fluid team__img" src="/images{{ team_image }}" width="320" height="229" alt="Borealis" loading="lazy">{% endif %}
+        <div class="container"><div class="text--maxw">{{ team_text | markdownFilter | safe }}</div></div>
     </section>
 
     <section class="project__section partners container" id="partners">
         <h2 class="heading--gradient">Partners</h2>
-        <div class="text--maxw">
-            <p>Flora&faunavisions is the concept and multimedia creator for the Genius Immersive Experience. For more than 20 years, this internationally award-winning design studio has been bringing immersive and interactive experiences to life — from exhibitions and live music shows to fashion events and stage productions.</p>
-            <p>Recently acclaimed works include stage and festival designs for the electronic artists Solomun and Paul Kalkbrenner, and curating and designing the interactive exhibition Olympus Perspective Playground, which travelled to more than 10 countries. The studio also designed the spatial musical production Dragon Spring Phoenix Rise, which showed in New York City then China, and is currently designing Wagner’s The Ring Cycle for Opera Australia, to be premiered in 2023.</p>
-            <p>Flora&faunavisions is an innovative creator of emotional moments, made up of an ecosystem of design professionals who specialise in the art of creating inspired content across industries and beyond expectations.</p>
-        </div>
+        <div class="text--maxw">{{ partners_text | markdownFilter | safe }}</div>
         <ul class="partners__list">
             <li class="partners__item partners__item_flora">
                 <a href="https://www.florafaunavisions.de/" target="_blank">
@@ -172,13 +158,13 @@
         </ul>
     </section>
 
-    <section class="project__section faqs container" id="faqs">
+    {% if faqs | length %}<section class="project__section faqs container" id="faqs">
         <h2 class="heading--gradient">FAQs</h2>
-        <details class='faqs__row'>
-            <summary class='faqs__summary'>Is it COVID-Free?</summary>
-            <div class="faqs__answer">Yes it is.</div>
-        </details>
-    </section>
+        {% for faq in faqs %}<details class='faqs__row'>
+            <summary class='faqs__summary'>{{ faq.question }}</summary>
+            <div class="faqs__answer">{{ faq.answer }}</div>
+        </details>{% endfor %}
+    </section>{% endif %}
 
     <footer class='genius__footer container'>
         <div class='footer__top'>
