@@ -50,7 +50,7 @@ concept:
     past.
   quote_2: "«All our knowledge has its origins in our perceptions», — Leonado Da Vinci"
 locations:
-- date: Dec, 2021
+- date: 2021-12-31T23:00:00Z
   map: "/upload/berlin.svg"
   city: Berlin, Germany
   address: Wriezener Karree 15
