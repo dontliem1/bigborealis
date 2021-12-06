@@ -7,7 +7,7 @@ mini_logo: "/mini-logo.svg"
 hero_image: "/hero.jpg"
 instagram: 'https://www.instagram.com/bigexperiential/'
 tickets: 'https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663'
-hero: The Genius Immersive Experience is a creative journey through the eyes of Leonardo da Vinci, as if he were alive today. It’s like nothing you’ve experienced ever before
+description: The Genius Immersive Experience is a creative journey through the eyes of Leonardo da Vinci, as if he were alive today. It’s like nothing you’ve experienced ever before
 features:
   features_title: Genius is not just another show
   introduction: It’s a completely new, immersive art experience that sets the tone

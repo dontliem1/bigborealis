@@ -8,7 +8,7 @@ sections:
   label: Content
 - type: document
   path: src/index.md
-  label: Coming soon page
+  label: Homepage
   templates:
   - homepage
 - type: document
@@ -16,21 +16,11 @@ sections:
   label: Genius Immersive Experience
   templates:
   - genius
-- type: directory
-  path: src/posts
-  label: Posts
-  create: documents
-  match: "*.md"
-  templates:
-  - post
 - type: heading
   label: Globals
 - type: document
   path: src/_data/navigation.json
-  label: Navigation
-- type: document
-  path: src/_data/tokens.json
-  label: Theme settings
+  label: Homepage navigation
 upload_dir: src/images/upload
 public_path: "/upload"
 front_matter_path: ''
