@@ -14,7 +14,7 @@ description: The Genius Immersive Experience is a creative journey through the
 features:
   features_title: Genius is not just another show
   introduction: It’s a completely new, immersive art experience that sets the tone
-    for the next generation of shows
+    for the next generation of shows.
   next_generation: "**Next-generation.** Just as Leonardo da Vinci was ahead of his
     time, so too is this show — pushing the boundaries of visual content to astonishing
     effect. Prepare to discover something truly original."
