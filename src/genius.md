@@ -1,13 +1,16 @@
 ---
 layout: genius
 title: Genius Immersive Experience
-metaDesc: Creative journey through the eyes of Leonardo Da Vinci. The next-generation immersive show and an absolutely new experience.
+metaDesc: Creative journey through the eyes of Leonardo Da Vinci. The next-generation
+  immersive show and an absolutely new experience.
 logo: "/logo.svg"
 mini_logo: "/mini-logo.svg"
 hero_image: "/hero.jpg"
-instagram: 'https://www.instagram.com/bigexperiential/'
-tickets: 'https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663'
-description: The Genius Immersive Experience is a creative journey through the eyes of Leonardo da Vinci, as if he were alive today. It’s like nothing you’ve experienced ever before
+instagram: https://www.instagram.com/bigexperiential/
+tickets: https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663
+description: The Genius Immersive Experience is a creative journey through the eyes
+  of Leonardo da Vinci, as if he were alive today. It’s like nothing you’ve experienced
+  ever before.
 features:
   features_title: Genius is not just another show
   introduction: It’s a completely new, immersive art experience that sets the tone
@@ -26,7 +29,9 @@ features:
     interactive visuals that accompany the show, within a 360-degree soundscape."
 concept:
   concept_title: Concept
-  concept_start: The big bang spawned the planets and the universe – but why was it all created if there was nobody to discover it, to feel it, to experience it? There was one piece of the puzzle missing…
+  concept_start: The big bang spawned the planets and the universe – but why was it
+    all created if there was nobody to discover it, to feel it, to experience it?
+    There was one piece of the puzzle missing…
   concept_explosion: "/concept/glow@1x.jpg"
   vitruvian: "/concept/vitruvian-man@1x.jpg"
   portrait: "/concept/davinci.jpg"
@@ -49,7 +54,7 @@ locations:
   map: "/upload/berlin.svg"
   city: Berlin, Germany
   address: Wriezener Karree 15
-  link: "https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663"
+  link: https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663
 team_image: "/borealis.jpg"
 team_text: |-
   The Genius Immersive Experience is produced by Borealis Interactive Group (BIG), trailblazing the next generation of immersive shows.
@@ -70,4 +75,5 @@ partners_text: |-
 faqs:
 - question: Is it COVID-Free?
   answer: Yes, it is.
+
 ---
