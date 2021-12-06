@@ -86,15 +86,15 @@
         <h2 class="heading--gradient">Location</h2>
         <div class='location__grid'>
             {% for location in locations %}
-            <div class='location__item'>
-                <p class="location__heading">{{ location.date | getMonth }}</p>
-                {% if location.map %}<img class="location__map" src="/images{{ location.map }}" width="204" height="166" alt="">{% endif %}
-                <div>
-                    <b class="location__city">{{ location.city }}</b>
-                    <p class="location__address">{{ location.address }}</p>
-                    <a class="btn" href="{{ location.link }}">BUY TICKET</a>
+                <div class='location__item'>
+                    <p class="location__heading">{{ location.date | getMonth }}</p>
+                    {% if location.map %}<img class="location__map" src="/images{{ location.map }}" width="204" height="166" alt="">{% endif %}
+                    <div>
+                        <b class="location__city">{{ location.city }}</b>
+                        <p class="location__address">{{ location.address }}</p>
+                        <a class="btn" href="{{ location.link }}">BUY TICKET</a>
+                    </div>
                 </div>
-            </div>
             {% endfor %}
             <div class="location__item location__item--form">
                 <h3 class='location__heading'>Subscribe</h3>
@@ -111,7 +111,7 @@
 
     <section class="project__section team" id="team">
         <h2 class="heading--gradient container">Team</h2>
-        {% if location.map %}<img class="img--fluid team__img" src="/images{{ team_image }}" width="320" height="229" alt="Borealis" loading="lazy">{% endif %}
+        {% if team_image %}<img class="img--fluid team__img" src="/images{{ team_image }}" width="320" height="229" alt="Borealis" loading="lazy">{% endif %}
         <div class="container"><div class="text--maxw">{{ team_text | markdownFilter | safe }}</div></div>
     </section>
 
@@ -119,42 +119,14 @@
         <h2 class="heading--gradient">Partners</h2>
         <div class="text--maxw">{{ partners_text | markdownFilter | safe }}</div>
         <ul class="partners__list">
-            <li class="partners__item partners__item_flora">
-                <a href="https://www.florafaunavisions.de/" target="_blank">
-                    <img src="../images/partners/flora.svg" width="290" height="26" alt="Logo Flora and Fauna" loading="lazy">
+            {% for partner in (partners | rejectattr("isHidden")) %}
+            <li class="partners__item">
+                <a href="{{ partner.url }}" target="_blank">
+                    <img src="../images{{ partner.logo }}" width="290" alt="{{ partner.title }}" loading="lazy">
                 </a>
-                <p>Concept & Multimedia Creation</p>
+                <p>{{ partner.specialization }}</p>
             </li>
-            <li class="partners__item partners__item_panasonic">
-                <a href="https://www.panasonic.com/" target="_blank">
-                    <img src="../images/partners/panasonic.svg" width="145" height="22" alt="Panasonic" loading="lazy">
-                </a>
-                <p>Projection</p>
-            </li>
-            <li class="partners__item partners__item_ticketmaster">
-                <a href="https://www.ticketmaster.com" target="_blank">
-                    <img src="../images/partners/ticketmaster.svg" width="146" height="20" alt="Ticketmaster" loading="lazy">
-                </a>
-                <p>Ticketing Platform</p>
-            </li>
-            <li class="partners__item partners__item_disguise">
-                <a href="https://www.disguise.one/" target="_blank">
-                    <img src="../images/partners/disguise.svg" width="109" height="31" alt="Disguise" loading="lazy">
-                </a>
-                <p>Media Servers</p>
-            </li>
-            <li class="partners__item partners__item_audiotechnik">
-                <a href="https://www.dbaudio.com/" target="_blank">
-                    <img src="../images/partners/audiotechnik.svg" width="146" height="36" alt="d & b audiotechnik" loading="lazy">
-                </a>
-                <p>Sound Design</p>
-            </li>
-            <li class="partners__item partners__item_lepekhin">
-                <a href="https://lepekhin.studio/en" target="_blank">
-                    <img src="../images/partners/lepekhin-studio.svg" width="187" height="39" alt="Lepekhin Studio" loading="lazy">
-                </a>
-                <p>Brand, Site & Social Media</p>
-            </li>
+            {% endfor %}
         </ul>
     </section>
 

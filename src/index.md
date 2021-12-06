@@ -3,7 +3,6 @@ layout: genius
 title: Genius Immersive Experience
 metaDesc: Creative journey through the eyes of Leonardo Da Vinci. The next-generation
   immersive show and an absolutely new experience.
-logo: "/logo.svg"
 mini_logo: "/mini-logo.svg"
 hero_image: "/hero.jpg"
 instagram: https://www.instagram.com/bigexperiential/
@@ -74,6 +73,37 @@ partners_text: |-
   Recently acclaimed works include stage and festival designs for the electronic artists Solomun and Paul Kalkbrenner, and curating and designing the interactive exhibition Olympus Perspective Playground, which travelled to more than 10 countries. The studio also designed the spatial musical production Dragon Spring Phoenix Rise, which showed in New York City then China, and is currently designing Wagner’s The Ring Cycle for Opera Australia, to be premiered in 2023.
 
   Flora&faunavisions is an innovative creator of emotional moments, made up of an ecosystem of design professionals who specialise in the art of creating inspired content across industries and beyond expectations.
+partners:
+- title: Flora&Fauna Visions
+  specialization: Concept & Multimedia Creation
+  url: 'https://www.florafaunavisions.de/'
+  isHidden: false
+  logo: /partners/flora.svg
+- title: Panasonic
+  specialization: Projection
+  url: 'https://www.panasonic.com/'
+  isHidden: false
+  logo: /partners/panasonic.svg
+- title: Ticket Master
+  specialization: Ticketing Platform
+  url: 'https://www.ticketmaster.com/'
+  isHidden: true
+  logo: /partners/ticketmaster.svg
+- title: Disguise
+  specialization: Media Servers
+  url: 'https://www.disguise.one/'
+  isHidden: true
+  logo: /partners/disguise.svg
+- title: d&b audiotechnik
+  specialization: Sound Design
+  url: 'https://www.dbaudio.com/'
+  isHidden: true
+  logo: /partners/audiotechnik.svg
+- title: Lepekhin Studio
+  specialization: Brand, Site & Social Media
+  url: 'https://lepekhin.studio/en'
+  isHidden: true
+  logo: /partners/lepekhin-studio.svg
 faqs:
 - question: Is it COVID-Free?
   answer: Yes, it is.

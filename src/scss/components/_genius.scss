@@ -258,15 +258,15 @@
 }
 .feature_generation__img,
 .feature_touch__img {
-  width: 12.5em;
+  width: 9.375em;
   height: auto;
 }
 .feature_edutainment__img {
-  width: 8.75em;
+  width: 6.5em;
   height: auto;
 }
 .feature_play__img {
-  width: 13.75em;
+  width: 10em;
   height: auto;
 }
 .feature_play__wrapper {
@@ -286,12 +286,12 @@
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
   cursor: pointer;
-  transition-duration: 500ms;
+  transition-duration: 300ms;
   margin: 0;
   white-space: nowrap;
 
   &:hover {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.05);
   }
 
   &::before {
@@ -337,10 +337,10 @@
   .feature_generation__img,
   .feature_touch__img,
   .feature_play__img {
-    width: 16em;
+    width: 12em;
   }
   .feature_edutainment__img {
-    width: 12em;
+    width: 9em;
   }
 }
 @media (min-width: 70em) {
@@ -546,57 +546,41 @@
 .partners__item:nth-child(2n) {
   justify-self: end;
 }
-.partners__item_flora {
+.partners__item:nth-child(6n + 1) {
   margin-bottom: 1.5em;
 }
-.partners__item_lepekhin {
+.partners__item:nth-child(6n) {
   margin-top: 1.5em;
 }
 .partners__item img {
   max-width: 100%;
   height: auto;
+  width: auto;
+  max-height: 3.2rem;
 }
 .partners__item p {
   margin-top: .75em;
   margin-bottom: 0;
 }
-.partners__item_flora img {
-  width: 18.125em;
-}
-.partners__item_panasonic img {
-  width: 9em;
-}
-.partners__item_ticketmaster img {
-  width: 9em;
-}
-.partners__item_disguise img {
-  width: 7em;
-}
-.partners__item_audiotechnik img {
-  width: 9em;
-}
-.partners__item_lepekhin img {
-  width: 12em;
-}
 @media (min-width: 35em) {
-  .partners__item_flora {
+  .partners__item:nth-child(6n + 1) {
     grid-column: 1/3;
     justify-self: end;
   }
-  .partners__item.partners__item_disguise {
-    justify-self: center;
-  }
-  .partners__item_ticketmaster {
-    justify-self: center;
-    margin-top: 2em;
-  }
-  .partners__item_audiotechnik {
-    margin-top: 2em;
-  }
-  .partners__item.partners__item_panasonic {
+  .partners__item:nth-child(6n + 2) {
     justify-self: start;
   }
-  .partners__item_flora img {
+  .partners__item:nth-child(6n + 3) {
+    justify-self: center;
+    margin-top: 2em;
+  }
+  .partners__item:nth-child(6n + 4) {
+    justify-self: center;
+  }
+  .partners__item:nth-child(6n + 5) {
+    margin-top: 2em;
+  }
+  .partners__item:nth-child(6n + 1) img {
     width: 20.625em;
   }
 }
@@ -604,22 +588,22 @@
   .partners__list {
     margin-top: 8rem;
   }
-  .partners__item_flora img {
+  .partners__item:nth-child(6n + 1) img {
     width: 34.5em;
   }
-  .partners__item_panasonic img {
+  .partners__item:nth-child(6n + 2) img {
     width: 14em;
   }
-  .partners__item_ticketmaster img {
+  .partners__item:nth-child(6n + 3) img {
     width: 14em;
   }
-  .partners__item_disguise img {
+  .partners__item:nth-child(6n + 4) img {
     width: 11em;
   }
-  .partners__item_audiotechnik img {
+  .partners__item:nth-child(6n + 5) img {
     width: 15em;
   }
-  .partners__item_lepekhin img {
+  .partners__item:nth-child(6n) img {
     width: 18.5em;
   }
 }
