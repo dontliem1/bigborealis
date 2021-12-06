@@ -56,16 +56,18 @@ locations:
   address: Wriezener Karree 15
   link: https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663
 team_image: "/borealis.jpg"
-team_text: |-
-  The Genius Immersive Experience is produced by Borealis Interactive Group (BIG), trailblazing the next generation of immersive shows.
-
-  BIG creates an entirely new experience in the experience industry and strives to take the viewer to the highest level of emotion possible. Through spectacular large-scale story-telling using cutting-edge technologies, all executed by the best design teams, it achieves something never witnessed before.
-
-  BIG’s mission? To encourage people to look back at the heritage and influence of great minds, events and inventions, and reconsider their ongoing effect. The group believes that revisions of the past can provide answers to the questions and challenges humanity is dealing with right now. By bringing together people from different countries, cultures, ages, genders and backgrounds, BIG aspires to unite and allow for the rediscovery of ourselves.
-
-  **Jeffrey Hacke** Founder & CEO
-
-  **Bert van der Ryd** Co Founder & COO
+team_text: "The Genius Immersive Experience is produced by Borealis Interactive Group
+  (BIG), trailblazing the next generation of immersive shows.\n\nBIG creates an entirely
+  new experience in the experience industry and strives to take the viewer to the
+  highest level of emotion possible. Through spectacular large-scale story-telling
+  using cutting-edge technologies, all executed by the best design teams, it achieves
+  something never witnessed before.\n\nBIG’s mission? To encourage people to look
+  back at the heritage and influence of great minds, events and inventions, and reconsider
+  their ongoing effect. The group believes that revisions of the past can provide
+  answers to the questions and challenges humanity is dealing with right now. By bringing
+  together people from different countries, cultures, ages, genders and backgrounds,
+  BIG aspires to unite and allow for the rediscovery of ourselves.\n\n**Jeffrey Jah**
+  Founder\n\n**Bert van der Ryd** Co Founder "
 partners_text: |-
   Flora&faunavisions is the concept and multimedia creator for the Genius Immersive Experience. For more than 20 years, this internationally award-winning design studio has been bringing immersive and interactive experiences to life — from exhibitions and live music shows to fashion events and stage productions.
 
