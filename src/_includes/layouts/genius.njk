@@ -27,12 +27,12 @@
                     <path d="M15 20.005a5.005 5.005 0 110-10.01 5.005 5.005 0 010 10.01zM15 7.29a7.71 7.71 0 100 15.42 7.71 7.71 0 000-15.42zm9.953-.14a1.822 1.822 0 11-3.645 0 1.822 1.822 0 013.645 0"></path>
                 </svg>
             </a>
-            <a class="btn" href="{{ tickets }}" target="_blank">Buy Ticket</a>
+            <a class="btn" href="{{ tickets }}" target="_blank">BUY TICKET</a>
         </div>
     </header>
-    <div class="hero" style="background-image: linear-gradient(rgba(0,0,0,0) 70%, #000 100%), url('/images{{ hero_image }}');">
-        {% if (logo) %}<img class="hero__logo" src="/images{{ logo }}" alt="Genius Immersive Experience" width="180" height="53">{% endif %}
-    </div>
+    {% if hero_image %}
+        <img class="hero__image img--fluid" src="/images{{ hero_image }}" alt="Genius Immersive Experience" width="320" height="190">
+    {% endif %}
     <h1 class="genius__title container">{{ description }}</h1>
     <section class="project__section container">
         <h2 class="heading--gradient">{{ features.features_title }}</h2>
@@ -87,12 +87,12 @@
         <div class='location__grid'>
             {% for location in locations %}
             <div class='location__item'>
-                <p class="location__heading">{{ location.date }}</p>
+                <p class="location__heading">{{ location.date | getMonth }}</p>
                 {% if location.map %}<img class="location__map" src="/images{{ location.map }}" width="204" height="166" alt="">{% endif %}
                 <div>
                     <b class="location__city">{{ location.city }}</b>
                     <p class="location__address">{{ location.address }}</p>
-                    <a class="btn" href="{{ location.link }}">Buy Ticket</a>
+                    <a class="btn" href="{{ location.link }}">BUY TICKET</a>
                 </div>
             </div>
             {% endfor %}
@@ -181,7 +181,7 @@
         <div class='footer__bottom'>
             <div class='footer__copyright'>
                 <p>If you have any questions, feel free to contact us via email or simply DM us on Instagram or Facebook.</p>
-                <p>© Big Borealis Experimental, 2021</p>
+                <p>© Borealis Interactive Group BV, 2021</p>
             </div>
             <p class='footer__credit'>Image credit: FLORA&FAUNAVISIONS</p>
         </div>

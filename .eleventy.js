@@ -3,6 +3,7 @@ const fs = require('fs');
 
 // Import filters
 const dateFilter = require('./src/filters/date-filter.js');
+const getMonth = require('./src/filters/get-month.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
@@ -18,6 +19,7 @@ module.exports = function(config) {
   config.addFilter('dateFilter', dateFilter);
   config.addFilter('markdownFilter', markdownFilter);
   config.addFilter('w3DateFilter', w3DateFilter);
+  config.addFilter('getMonth', getMonth);
 
   // Layout aliases
   config.addLayoutAlias('home', 'layouts/home.njk');
