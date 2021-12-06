@@ -20,7 +20,7 @@ features:
     effect. Prepare to discover something truly original."
   touch: "**Touchable & Playable.** What’s it like to be inside one of the brightest
     minds that ever existed? Interact and feel the power of human creativity, the
-    light — bulb moment of invention and the cognitive workings of a Genius."
+    light-bulb moment of invention and the cognitive workings of a Genius."
   edutainment: "**Edutainment.** Revisit Leonardo’s inventions and ideas within a
     modern framework. Find new meanings in them, reflect on your own talents and endeavours,
     and take a glimpse into the future."
@@ -50,7 +50,7 @@ concept:
     past.
   quote_2: "«All our knowledge has its origins in our perceptions», — Leonado Da Vinci"
 locations:
-- date: 2021-12-31T23:00:00Z
+- date: 2021-12-31T23:00:00.000+00:00
   map: "/upload/berlin.svg"
   city: Berlin, Germany
   address: Wriezener Karree 15
