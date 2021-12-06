@@ -162,14 +162,11 @@
 .header__instagram {
   display: inline-block;
   text-decoration: none;
-  padding: 1.2rem;
+  padding: 2.4rem;
   align-self: center;
   transition: color .2s;
   line-height: 1;
-}
-.header__instagram svg {
-  width: 2.4rem;
-  height: auto;
+  background: url("/images/ig.svg") center /2.4rem no-repeat;
 }
 .header__wrapper .btn {
   margin: 1.2rem;
@@ -556,7 +553,9 @@
   max-width: 100%;
   height: auto;
   width: auto;
-  max-height: 3.2rem;
+  max-height: 1.6em;
+  object-position: 0 0;
+  object-fit: contain;
 }
 .partners__item p {
   margin-top: .75em;
@@ -587,6 +586,9 @@
 @media (min-width: 48em) {
   .partners__list {
     margin-top: 8rem;
+  }
+  .partners__item:nth-child img {
+    max-height: 3.2em;
   }
   .partners__item:nth-child(6n + 1) img {
     width: 34.5em;
@@ -642,7 +644,7 @@
 .footer__top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 .footer__nav {
   display: inline-grid;
@@ -656,6 +658,29 @@
   width: 3.5em;
   height: auto;
 }
+.footer__links {
+  line-height: 1;
+  margin-top: 0;
+}
+.footer__link {
+  display: inline-block;
+  padding: 1.25em;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__link_fb {
+  background-image: url("/images/fb.svg");
+}
+.footer__link_ig {
+  background-image: url("/images/ig.svg");
+}
+.footer__link_tt {
+  background-image: url("/images/tiktok.svg");
+}
+.footer__link:not(:last-child) {
+  margin-right: .75em;
+}
 .footer__bottom {
   margin-top: 4rem;
   display: flex;
@@ -667,6 +692,9 @@
   font-size: 2rem;
   flex-basis: 57rem;
 }
+.footer__copyright p:first-child {
+  margin-top: 0;
+}
 .footer__credit {
   margin-top: 3.2rem;
   font-size: .875em;
@@ -674,13 +702,12 @@
   text-transform: uppercase;
   background: url("../images/footer_icons.svg") bottom left /auto 4rem no-repeat;
 }
-.genius__footer p {
+.genius__footer p:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 35em) {
   .footer__nav {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-auto-flow: column;
     grid-column-gap: 1.6em;
   }
@@ -694,6 +721,9 @@
   }
   .footer__copyright {
     font-size: inherit;
+  }
+  .footer__links {
+    text-align: right;
   }
   .footer__credit {
     background-position: bottom right;
