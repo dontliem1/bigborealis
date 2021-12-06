@@ -32,7 +32,7 @@ concept:
   concept_start: The big bang spawned the planets and the universe – but why was it
     all created if there was nobody to discover it, to feel it, to experience it?
     There was one piece of the puzzle missing…
-  concept_explosion: "/concept/glow@1x.jpg"
+  concept_explosion: "/upload/stars.png"
   vitruvian: "/upload/vitruvian-man-1x.png"
   portrait: "/upload/monalisa.png"
   space: "/upload/cosmos.png"
