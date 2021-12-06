@@ -4,23 +4,11 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: heading
-  label: Content
 - type: document
   path: src/index.md
-  label: Homepage
-  templates:
-  - homepage
-- type: document
-  path: src/genius.md
   label: Genius Immersive Experience
   templates:
   - genius
-- type: heading
-  label: Globals
-- type: document
-  path: src/_data/navigation.json
-  label: Homepage navigation
 upload_dir: src/images/upload
 public_path: "/upload"
 front_matter_path: ''

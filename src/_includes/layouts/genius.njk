@@ -10,7 +10,7 @@
                 <a class="navigation__link" href="#location">Locations</a>
                 <a class="navigation__link" href="#team">Team</a>
                 <a class="navigation__link" href="#partners">Partners</a>
-                <a class="navigation__link" href="#faqs">FAQs</a>
+                {% if faqs | length %}<a class="navigation__link" href="#faqs">FAQs</a>{% endif %}
             </nav>
             <script>
                 document.querySelectorAll('.navigation__link').forEach((link) => {
