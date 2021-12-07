@@ -6,7 +6,7 @@ metaDesc: Creative journey through the eyes of Leonardo Da Vinci. The next-gener
 mini_logo: "/mini-logo.svg"
 hero_image: "/hero.jpg"
 instagram: "https://www.instagram.com/bigexperiential/"
-facebook:"https://www.facebook.com/BIGborealis"
+facebook: "https://www.facebook.com/BIGborealis"
 tiktok: "https://tiktok.com/@bigborealis"
 tickets: https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663
 description: The Genius Immersive Experience is a creative journey through the eyes
