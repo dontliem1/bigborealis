@@ -695,15 +695,19 @@
 .footer__copyright p:first-child {
   margin-top: 0;
 }
+.footer__studio {
+  display: inline-block;
+  line-height: 1;
+}
 .footer__credit {
   margin-top: 3.2rem;
   font-size: .875em;
-  padding-bottom: 5.2rem;
+  padding-bottom: 4rem;
   text-transform: uppercase;
   background: url("../images/footer_icons.svg") bottom left /auto 4rem no-repeat;
 }
-.genius__footer p:last-child {
-  margin-bottom: 0;
+.footer__credit p {
+  margin-bottom: 2.6rem;
 }
 @media (min-width: 35em) {
   .footer__nav {
