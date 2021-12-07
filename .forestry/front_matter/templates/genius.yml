@@ -292,25 +292,25 @@ fields:
       maxSize: 1
     label: Logo
   config:
-    min:
-    max:
-    labelField:
+    min: 
+    max: 
+    labelField: 
   label: Partners
 - name: faqs
   type: field_group_list
   fields:
-    - name: question
-      type: text
-      config:
-        required: false
-      label: Question
-    - name: answer
-      type: text
-      config:
-        required: false
-      label: Answer
+  - name: question
+    type: text
+    config:
+      required: false
+    label: Question
+  - name: answer
+    type: text
+    config:
+      required: false
+    label: Answer
   config:
-    min:
-    max:
-    labelField:
+    min: 
+    max: 
+    labelField: 
   label: FAQs

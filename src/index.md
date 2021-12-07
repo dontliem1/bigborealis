@@ -5,17 +5,17 @@ metaDesc: Creative journey through the eyes of Leonardo Da Vinci. The next-gener
   immersive show and an absolutely new experience.
 mini_logo: "/mini-logo.svg"
 hero_image: "/hero.jpg"
-instagram: "https://www.instagram.com/bigexperiential/"
-facebook: "https://www.facebook.com/BIGborealis"
-tiktok: "https://tiktok.com/@bigborealis"
+instagram: https://www.instagram.com/bigexperiential/
+facebook: https://www.facebook.com/BIGborealis
+tiktok: https://tiktok.com/@bigborealis
 tickets: https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663
 description: The Genius Immersive Experience is a creative journey through the eyes
   of Leonardo da Vinci, as if he were alive today. It’s like nothing you’ve experienced
   ever before.
 features:
   features_title: Genius is not just another show
-  introduction: It’s a completely new, immersive art experience that sets the tone
-    for the next generation of shows.
+  introduction: It’s a completely new, immersive and interactive art experience that
+    sets the tone for the next generation of shows.
   next_generation: "**Next-generation.** Just as Leonardo da Vinci was ahead of his
     time, so too is this show — pushing the boundaries of visual content to astonishing
     effect. Prepare to discover something truly original."
@@ -78,34 +78,34 @@ partners_text: |-
 partners:
 - title: Flora&Fauna Visions
   specialization: Concept & Multimedia Creation
-  url: 'https://www.florafaunavisions.de/'
+  url: https://www.florafaunavisions.de/
   isHidden: false
-  logo: /partners/flora.svg
+  logo: "/partners/flora.svg"
 - title: Panasonic
   specialization: Projection
-  url: 'https://www.panasonic.com/'
+  url: https://www.panasonic.com/
   isHidden: false
-  logo: /partners/panasonic.svg
+  logo: "/partners/panasonic.svg"
 - title: Ticket Master
   specialization: Ticketing Platform
-  url: 'https://www.ticketmaster.com/'
+  url: https://www.ticketmaster.com/
   isHidden: true
-  logo: /partners/ticketmaster.svg
+  logo: "/partners/ticketmaster.svg"
 - title: Disguise
   specialization: Media Servers
-  url: 'https://www.disguise.one/'
+  url: https://www.disguise.one/
   isHidden: true
-  logo: /partners/disguise.svg
+  logo: "/partners/disguise.svg"
 - title: d&b audiotechnik
   specialization: Sound Design
-  url: 'https://www.dbaudio.com/'
+  url: https://www.dbaudio.com/
   isHidden: true
-  logo: /partners/audiotechnik.svg
+  logo: "/partners/audiotechnik.svg"
 - title: Lepekhin Studio
   specialization: Brand, Site & Social Media
-  url: 'https://lepekhin.studio/en'
+  url: https://lepekhin.studio/en
   isHidden: true
-  logo: /partners/lepekhin-studio.svg
+  logo: "/partners/lepekhin-studio.svg"
 faqs:
 - question: Is it COVID-Free?
   answer: Yes, it is.
