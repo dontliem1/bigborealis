@@ -10,8 +10,7 @@ facebook: https://www.facebook.com/BIGborealis
 tiktok: https://tiktok.com/@bigborealis
 tickets: https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663
 description: The Genius Immersive Experience is a creative journey through the eyes
-  of Leonardo da Vinci, as if he were alive today. It’s like nothing you’ve experienced
-  ever before.
+  of Leonardo da Vinci. It’s like nothing you’ve experienced ever before.
 features:
   features_title: Genius is not just another show
   introduction: It’s a completely new, immersive and interactive art experience that
