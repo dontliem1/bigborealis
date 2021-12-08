@@ -55,7 +55,7 @@ locations:
   city: Berlin, Germany
   address: Wriezener Karree 15
   link: https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663
-team_image: "/borealis.jpg"
+team_image: "/upload/team.png"
 team_text: "The Genius Immersive Experience is produced by Borealis Interactive Group
   (BIG), trailblazing the next generation of immersive shows.\n\nBIG creates an entirely
   new experience in the experience industry and strives to take the viewer to the
