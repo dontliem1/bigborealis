@@ -68,12 +68,23 @@ team_text: "The Genius Immersive Experience is produced by Borealis Interactive 
   together people from different countries, cultures, ages, genders and backgrounds,
   BIG aspires to unite and allow for the rediscovery of ourselves.\n\n**Jeffrey Jah**
   Founder\n\n**Bert van der Ryd** Co Founder "
-partners_text: |-
-  Flora&faunavisions is the concept and multimedia creator for the Genius Immersive Experience. For more than 20 years, this internationally award-winning design studio has been bringing immersive and interactive experiences to life — from exhibitions and live music shows to fashion events and stage productions.
-
-  Recently acclaimed works include stage and festival designs for the electronic artists Solomun and Paul Kalkbrenner, and curating and designing the interactive exhibition Olympus Perspective Playground, which travelled to more than 10 countries. The studio also designed the spatial musical production Dragon Spring Phoenix Rise, which showed in New York City then China, and is currently designing Wagner’s The Ring Cycle for Opera Australia, to be premiered in 2023.
-
-  Flora&faunavisions is an innovative creator of emotional moments, made up of an ecosystem of design professionals who specialise in the art of creating inspired content across industries and beyond expectations.
+partners_text: "flora&faunavisions is the concept and multimedia creator for the Genius
+  Immersive Experience. For more than 20 years, this internationally award-winning
+  design studio has been bringing immersive and interactive experiences to life –
+  from exhibitions and live music shows to fashion events and stage productions. \n\nAlways
+  at the forefront of new technologies, flora&faunavisions operates at the intersection
+  of light, artistic media, language and digital frameworks, challenging and enriching
+  our perception of how we absorb spaces, stories, moments and the world that surrounds
+  us. Recently acclaimed works include stage and festival designs for the electronic
+  artists Solomun and Paul Kalkbrenner, and curating and designing the interactive
+  exhibition Olympus Perspective Playground, which travelled to more than 10 countries.
+  The studio also created the hit immersive experience Magenta Moon Garden in Berlin
+  in 2021 as well as the spatial musical production Dragon Spring Phoenix Rise, which
+  premiered at the Shed in New York City, and is currently designing Wagner’s The
+  Ring Cycle for Opera Australia, to be premiered in 2023. \n\nThe multidisciplinary
+  team at flora&faunavisions has approached the genius of Leonardo da Vinci with a
+  contemporary mindset and cutting-edge skillset to bring an unprecedented outburst
+  of inspiration and creativity to life."
 partners:
 - title: Flora&Fauna Visions
   specialization: Concept & Multimedia Creation
