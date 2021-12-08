@@ -36,7 +36,7 @@ concept:
   vitruvian: "/upload/vitruvian-man-1x.png"
   portrait: "/upload/monalisa.png"
   space: "/upload/cosmos.png"
-  concept_visuals: "/concept/disco.jpg"
+  concept_visuals: "/upload/technique.png"
   genius_text: 'The Genius: Leonardo explored the world around him through science,
     art and intuition. Humankind was not created just to mark time, he realised, but
     also to invent, create and aspire to achieve knowledge.'
