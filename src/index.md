@@ -10,21 +10,21 @@ facebook: https://www.facebook.com/BIGborealis
 tiktok: https://tiktok.com/@bigborealis
 tickets: https://www.ticketmaster.de/artist/genius-immersive-experience-tickets/1111663
 description: The Genius Immersive Experience is a creative journey through the eyes
-  of Leonardo da Vinci. It’s like nothing you’ve experienced ever before.
+  of Leonardo da Vinci, today. It’s like nothing you’ve experienced ever before.
 features:
   features_title: Genius is not just another show
-  introduction: It’s a completely new, immersive and interactive art experience that
+  introduction: It’s a completely new immersive and interactive art experience that
     sets the tone for the next generation of shows.
   next_generation: "**Next-generation.** Just as Leonardo da Vinci was ahead of his
-    time, so too is this show — pushing the boundaries of visual content to astonishing
+    time, so too is this show – pushing the boundaries of visual content to astonishing
     effect. Prepare to discover something truly original."
-  touch: "**Touchable & Playable.** What’s it like to be inside one of the brightest
-    minds that ever existed? Interact and feel the power of human creativity, the
-    light-bulb moment of invention and the cognitive workings of a Genius."
-  edutainment: "**Edutainment.** Revisit Leonardo’s inventions and ideas within a
-    modern framework. Find new meanings in them, reflect on your own talents and endeavours,
+  touch: "**Touchable & Playable.** What’s it like inside one of the brightest minds
+    that ever existed? Interact and feel the power of human creativity, the light-bulb
+    moment of invention and the cognitive workings of a Genius."
+  edutainment: "**Edutainment.**Revisit Leonardo’s inventions and ideas within a modern
+    framework. Find new meanings in them, reflect on your own talents and endeavours,
     and take a glimpse into the future."
-  music: "**Music Experience.** Take a moment to slow down, focus on the now and tune
+  music: "**Music Experience.**Take a moment to slow down, focus on the now and tune
     into your thoughts. Give yourself up to the frisson-inducing musical score and
     interactive visuals that accompany the show, within a 360-degree soundscape."
 concept:
